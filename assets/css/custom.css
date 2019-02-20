@@ -1,0 +1,108 @@
+.loader {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	z-index: 10000000;
+	background-color: rgba(0, 0, 0, 0.6);
+	text-align: center;
+	padding-top: 25%;
+}
+
+.hidden {
+	display: none;
+}
+
+.custommodal {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	z-index: 20;
+	margin: 0 auto;
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 30px;
+}
+
+.cadhide {
+	display: none;
+}
+
+a.dropdown-item.cadhide {
+	display: none;
+}
+
+li.nav-item.cadhide {
+	display: none;
+}
+
+.purple-text{
+	color:#9c27b0;
+}
+
+.pre-wrap{
+	white-space: pre-wrap !important;
+}
+/* 
+To make notify.js above the modal element
+*/
+.notifyjs-corner{
+	z-index: 10000 !important;
+}
+.filter-group>*{
+	border: 0;
+	top: 1.5px;
+}
+.filter-group input, .filter-group  select{
+	border-radius: 5px;
+}
+.filter-group{
+	border: 1px solid rgb(218, 202, 202);
+	border-radius: 5px;
+}
+.filter-label{
+	font-weight: 900 !important;
+    color: black !important;
+    font-size: 14px !important;
+}
+
+/**
+*This for the selecbox arrow
+*/
+select.minimal {
+  background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc) !important;
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em !important;
+  background-repeat: no-repeat;
+}
+
+select.minimal:focus {
+  background-image:
+    linear-gradient(45deg, #9c27b0 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, #9c27b0 50%),
+    linear-gradient(to right, #ccc, #ccc) !important;
+  background-position:
+    calc(100% - 15px) 1em,
+    calc(100% - 20px) 1em,
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+  border-color: green;
+  outline: 0;
+}
