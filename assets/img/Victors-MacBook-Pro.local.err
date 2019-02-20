@@ -1,0 +1,1228 @@
+2018-08-04 09:20:04 6219 mysqld_safe Starting mysqld daemon with databases from /Applications/XAMPP/xamppfiles/var/mysql
+2018-08-04  9:20:05 140736144778112 [Note] Using unique option prefix 'key_buffer' is error-prone and can break in the future. Please use the full name 'key_buffer_size' instead.
+2018-08-04  9:20:05 140736144778112 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld (mysqld 10.1.32-MariaDB) starting as process 6365 ...
+2018-08-04  9:20:05 140736144778112 [Warning] Setting lower_case_table_names=2 because file system for /Applications/XAMPP/xamppfiles/var/mysql/ is case insensitive
+2018-08-04  9:20:05 140736144778112 [Note] InnoDB: innodb_empty_free_list_algorithm has been changed to legacy because of small buffer pool size. In order to use backoff, increase buffer pool at least up to 20MB.
+
+2018-08-04  9:20:05 140736144778112 [Note] InnoDB: Using mutexes to ref count buffer pool pages
+2018-08-04  9:20:05 140736144778112 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-08-04  9:20:05 140736144778112 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2018-08-04  9:20:05 140736144778112 [Note] InnoDB: GCC builtin __sync_synchronize() is used for memory barrier
+2018-08-04  9:20:05 140736144778112 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2018-08-04  9:20:05 140736144778112 [Note] InnoDB: Using SSE crc32 instructions
+2018-08-04  9:20:05 140736144778112 [Note] InnoDB: Initializing buffer pool, size = 16.0M
+2018-08-04  9:20:05 140736144778112 [Note] InnoDB: Completed initialization of buffer pool
+2018-08-04  9:20:05 140736144778112 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-08-04  9:20:05 140736144778112 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-08-04  9:20:05 140736144778112 [Note] InnoDB: Waiting for purge to start
+2018-08-04  9:20:05 140736144778112 [Note] InnoDB:  Percona XtraDB (http://www.percona.com) 5.6.38-83.0 started; log sequence number 1762733
+2018-08-04  9:20:05 123145392091136 [Note] InnoDB: Dumping buffer pool(s) not yet started
+2018-08-04  9:20:05 140736144778112 [Note] Plugin 'FEEDBACK' is disabled.
+2018-08-04  9:20:05 140736144778112 [Note] Server socket created on IP: '::'.
+2018-08-04  9:20:06 140736144778112 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld: ready for connections.
+Version: '10.1.32-MariaDB'  socket: '/Applications/XAMPP/xamppfiles/var/mysql/mysql.sock'  port: 3306  Source distribution
+2018-08-04  9:20:28 123145394237440 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld: Normal shutdown
+2018-08-04  9:20:28 123145394237440 [Note] Event Scheduler: Purging the queue. 0 events
+2018-08-04  9:20:28 123145389944832 [Note] InnoDB: FTS optimize thread exiting.
+2018-08-04  9:20:28 123145394237440 [Note] InnoDB: Starting shutdown...
+2018-08-04  9:20:28 123145394237440 [Note] InnoDB: Waiting for page_cleaner to finish flushing of buffer pool
+2018-08-04  9:20:30 123145394237440 [Note] InnoDB: Shutdown completed; log sequence number 1762743
+2018-08-04  9:20:30 123145394237440 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld: Shutdown complete
+
+2018-08-04 09:20:30 6219 mysqld_safe mysqld from pid file /Applications/XAMPP/xamppfiles/var/mysql/Victors-MacBook-Pro.local.pid ended
+2018-08-04 09:21:47 6658 mysqld_safe Starting mysqld daemon with databases from /Applications/XAMPP/xamppfiles/var/mysql
+2018-08-04  9:21:47 140736144778112 [Note] Using unique option prefix 'key_buffer' is error-prone and can break in the future. Please use the full name 'key_buffer_size' instead.
+2018-08-04  9:21:47 140736144778112 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld (mysqld 10.1.32-MariaDB) starting as process 6804 ...
+2018-08-04  9:21:47 140736144778112 [Warning] Setting lower_case_table_names=2 because file system for /Applications/XAMPP/xamppfiles/var/mysql/ is case insensitive
+2018-08-04  9:21:47 140736144778112 [Note] InnoDB: innodb_empty_free_list_algorithm has been changed to legacy because of small buffer pool size. In order to use backoff, increase buffer pool at least up to 20MB.
+
+2018-08-04  9:21:47 140736144778112 [Note] InnoDB: Using mutexes to ref count buffer pool pages
+2018-08-04  9:21:47 140736144778112 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-08-04  9:21:47 140736144778112 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2018-08-04  9:21:47 140736144778112 [Note] InnoDB: GCC builtin __sync_synchronize() is used for memory barrier
+2018-08-04  9:21:47 140736144778112 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2018-08-04  9:21:47 140736144778112 [Note] InnoDB: Using SSE crc32 instructions
+2018-08-04  9:21:47 140736144778112 [Note] InnoDB: Initializing buffer pool, size = 16.0M
+2018-08-04  9:21:47 140736144778112 [Note] InnoDB: Completed initialization of buffer pool
+2018-08-04  9:21:47 140736144778112 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-08-04  9:21:47 140736144778112 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-08-04  9:21:47 140736144778112 [Note] InnoDB: Waiting for purge to start
+2018-08-04  9:21:47 140736144778112 [Note] InnoDB:  Percona XtraDB (http://www.percona.com) 5.6.38-83.0 started; log sequence number 1762743
+2018-08-04  9:21:48 123145351200768 [Note] InnoDB: Dumping buffer pool(s) not yet started
+2018-08-04  9:21:48 140736144778112 [Note] Plugin 'FEEDBACK' is disabled.
+2018-08-04  9:21:48 140736144778112 [Note] Server socket created on IP: '::'.
+2018-08-04  9:21:48 140736144778112 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld: ready for connections.
+Version: '10.1.32-MariaDB'  socket: '/Applications/XAMPP/xamppfiles/var/mysql/mysql.sock'  port: 3306  Source distribution
+2018-08-04  9:29:50 123145353347072 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld: Normal shutdown
+2018-08-04  9:29:50 123145353347072 [Note] Event Scheduler: Purging the queue. 0 events
+2018-08-04  9:29:50 123145349054464 [Note] InnoDB: FTS optimize thread exiting.
+2018-08-04  9:29:50 123145353347072 [Note] InnoDB: Starting shutdown...
+2018-08-04  9:29:51 123145353347072 [Note] InnoDB: Waiting for page_cleaner to finish flushing of buffer pool
+2018-08-04  9:29:52 123145353347072 [Note] InnoDB: Shutdown completed; log sequence number 5659003
+2018-08-04  9:29:52 123145353347072 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld: Shutdown complete
+
+2018-08-04 09:29:52 6658 mysqld_safe mysqld from pid file /Applications/XAMPP/xamppfiles/var/mysql/Victors-MacBook-Pro.local.pid ended
+2018-08-04 09:30:03 7592 mysqld_safe Starting mysqld daemon with databases from /Applications/XAMPP/xamppfiles/var/mysql
+2018-08-04  9:30:03 140736144778112 [Note] Using unique option prefix 'key_buffer' is error-prone and can break in the future. Please use the full name 'key_buffer_size' instead.
+2018-08-04  9:30:03 140736144778112 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld (mysqld 10.1.32-MariaDB) starting as process 7738 ...
+2018-08-04  9:30:03 140736144778112 [Warning] Setting lower_case_table_names=2 because file system for /Applications/XAMPP/xamppfiles/var/mysql/ is case insensitive
+2018-08-04  9:30:03 140736144778112 [Note] InnoDB: innodb_empty_free_list_algorithm has been changed to legacy because of small buffer pool size. In order to use backoff, increase buffer pool at least up to 20MB.
+
+2018-08-04  9:30:03 140736144778112 [Note] InnoDB: Using mutexes to ref count buffer pool pages
+2018-08-04  9:30:03 140736144778112 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-08-04  9:30:03 140736144778112 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2018-08-04  9:30:03 140736144778112 [Note] InnoDB: GCC builtin __sync_synchronize() is used for memory barrier
+2018-08-04  9:30:03 140736144778112 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2018-08-04  9:30:03 140736144778112 [Note] InnoDB: Using SSE crc32 instructions
+2018-08-04  9:30:03 140736144778112 [Note] InnoDB: Initializing buffer pool, size = 16.0M
+2018-08-04  9:30:03 140736144778112 [Note] InnoDB: Completed initialization of buffer pool
+2018-08-04  9:30:03 140736144778112 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-08-04  9:30:03 140736144778112 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-08-04  9:30:03 140736144778112 [Note] InnoDB: Waiting for purge to start
+2018-08-04  9:30:03 140736144778112 [Note] InnoDB:  Percona XtraDB (http://www.percona.com) 5.6.38-83.0 started; log sequence number 5659003
+2018-08-04  9:30:03 123145472774144 [Note] InnoDB: Dumping buffer pool(s) not yet started
+2018-08-04  9:30:03 140736144778112 [Note] Plugin 'FEEDBACK' is disabled.
+2018-08-04  9:30:03 140736144778112 [Note] Server socket created on IP: '::'.
+2018-08-04  9:30:03 140736144778112 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld: ready for connections.
+Version: '10.1.32-MariaDB'  socket: '/Applications/XAMPP/xamppfiles/var/mysql/mysql.sock'  port: 3306  Source distribution
+2018-08-04 20:47:31 123145474920448 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld: Normal shutdown
+2018-08-04 20:47:31 123145474920448 [Note] Event Scheduler: Purging the queue. 0 events
+2018-08-04 20:47:31 123145470627840 [Note] InnoDB: FTS optimize thread exiting.
+2018-08-04 20:47:31 123145474920448 [Note] InnoDB: Starting shutdown...
+2018-08-04 20:47:31 123145474920448 [Note] InnoDB: Waiting for page_cleaner to finish flushing of buffer pool
+2018-08-04 20:47:32 123145474920448 [Note] InnoDB: Shutdown completed; log sequence number 5659013
+2018-08-04 20:47:33 123145474920448 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld: Shutdown complete
+
+2018-08-05 16:08:11 951 mysqld_safe Starting mysqld daemon with databases from /Applications/XAMPP/xamppfiles/var/mysql
+2018-08-05 16:08:15 140736266171264 [Note] Using unique option prefix 'key_buffer' is error-prone and can break in the future. Please use the full name 'key_buffer_size' instead.
+2018-08-05 16:08:15 140736266171264 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld (mysqld 10.1.32-MariaDB) starting as process 1099 ...
+2018-08-05 16:08:16 140736266171264 [Warning] Setting lower_case_table_names=2 because file system for /Applications/XAMPP/xamppfiles/var/mysql/ is case insensitive
+2018-08-05 16:08:16 140736266171264 [Note] InnoDB: innodb_empty_free_list_algorithm has been changed to legacy because of small buffer pool size. In order to use backoff, increase buffer pool at least up to 20MB.
+
+2018-08-05 16:08:16 140736266171264 [Note] InnoDB: Using mutexes to ref count buffer pool pages
+2018-08-05 16:08:16 140736266171264 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-08-05 16:08:16 140736266171264 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2018-08-05 16:08:16 140736266171264 [Note] InnoDB: GCC builtin __sync_synchronize() is used for memory barrier
+2018-08-05 16:08:16 140736266171264 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2018-08-05 16:08:16 140736266171264 [Note] InnoDB: Using SSE crc32 instructions
+2018-08-05 16:08:16 140736266171264 [Note] InnoDB: Initializing buffer pool, size = 16.0M
+2018-08-05 16:08:16 140736266171264 [Note] InnoDB: Completed initialization of buffer pool
+2018-08-05 16:08:16 140736266171264 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-08-05 16:08:17 140736266171264 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-08-05 16:08:17 140736266171264 [Note] InnoDB: Waiting for purge to start
+2018-08-05 16:08:17 140736266171264 [Note] InnoDB:  Percona XtraDB (http://www.percona.com) 5.6.38-83.0 started; log sequence number 5659013
+2018-08-05 16:08:17 123145405964288 [Note] InnoDB: Dumping buffer pool(s) not yet started
+2018-08-05 16:08:17 140736266171264 [Note] Plugin 'FEEDBACK' is disabled.
+2018-08-05 16:08:17 140736266171264 [Note] Server socket created on IP: '::'.
+2018-08-05 16:08:17 140736266171264 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld: ready for connections.
+Version: '10.1.32-MariaDB'  socket: '/Applications/XAMPP/xamppfiles/var/mysql/mysql.sock'  port: 3306  Source distribution
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-08-05 16:14:56 123145408647168 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-08-05 18:10:09 123145408110592 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld: Normal shutdown
+2018-08-05 18:10:10 123145408110592 [Note] Event Scheduler: Purging the queue. 0 events
+2018-08-05 18:10:10 123145403817984 [Note] InnoDB: FTS optimize thread exiting.
+2018-08-05 18:10:10 123145408110592 [Note] InnoDB: Starting shutdown...
+2018-08-05 18:10:10 123145408110592 [Note] InnoDB: Waiting for page_cleaner to finish flushing of buffer pool
+2018-08-05 18:10:11 123145408110592 [Note] InnoDB: Shutdown completed; log sequence number 9728472
+2018-08-05 18:10:12 123145408110592 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld: Shutdown complete
+
+2018-10-13 10:47:26 3790 mysqld_safe Starting mysqld daemon with databases from /Applications/XAMPP/xamppfiles/var/mysql
+2018-10-13 10:47:26 140735803286400 [Note] Using unique option prefix 'key_buffer' is error-prone and can break in the future. Please use the full name 'key_buffer_size' instead.
+2018-10-13 10:47:26 140735803286400 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld (mysqld 10.1.32-MariaDB) starting as process 3936 ...
+2018-10-13 10:47:27 140735803286400 [Warning] Setting lower_case_table_names=2 because file system for /Applications/XAMPP/xamppfiles/var/mysql/ is case insensitive
+2018-10-13 10:47:27 140735803286400 [Note] InnoDB: innodb_empty_free_list_algorithm has been changed to legacy because of small buffer pool size. In order to use backoff, increase buffer pool at least up to 20MB.
+
+2018-10-13 10:47:27 140735803286400 [Note] InnoDB: Using mutexes to ref count buffer pool pages
+2018-10-13 10:47:27 140735803286400 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-10-13 10:47:27 140735803286400 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2018-10-13 10:47:27 140735803286400 [Note] InnoDB: GCC builtin __sync_synchronize() is used for memory barrier
+2018-10-13 10:47:27 140735803286400 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2018-10-13 10:47:27 140735803286400 [Note] InnoDB: Using SSE crc32 instructions
+2018-10-13 10:47:27 140735803286400 [Note] InnoDB: Initializing buffer pool, size = 16.0M
+2018-10-13 10:47:27 140735803286400 [Note] InnoDB: Completed initialization of buffer pool
+2018-10-13 10:47:28 140735803286400 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-10-13 10:47:31 140735803286400 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-10-13 10:47:31 140735803286400 [Note] InnoDB: Waiting for purge to start
+2018-10-13 10:47:31 140735803286400 [Note] InnoDB:  Percona XtraDB (http://www.percona.com) 5.6.38-83.0 started; log sequence number 9728472
+2018-10-13 10:47:31 123145543036928 [Note] InnoDB: Dumping buffer pool(s) not yet started
+2018-10-13 10:47:31 140735803286400 [Note] Plugin 'FEEDBACK' is disabled.
+2018-10-13 10:47:32 140735803286400 [Note] Server socket created on IP: '::'.
+2018-10-13 10:47:32 140735803286400 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld: ready for connections.
+Version: '10.1.32-MariaDB'  socket: '/Applications/XAMPP/xamppfiles/var/mysql/mysql.sock'  port: 3306  Source distribution
+2018-10-13 10:52:17 123145545183232 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld: Normal shutdown
+2018-10-13 10:52:17 123145545183232 [Note] Event Scheduler: Purging the queue. 0 events
+2018-10-13 10:52:17 123145540890624 [Note] InnoDB: FTS optimize thread exiting.
+2018-10-13 10:52:17 123145545183232 [Note] InnoDB: Starting shutdown...
+2018-10-13 10:52:18 123145545183232 [Note] InnoDB: Waiting for page_cleaner to finish flushing of buffer pool
+2018-10-13 10:52:20 123145545183232 [Note] InnoDB: Shutdown completed; log sequence number 9728704
+2018-10-13 10:52:20 123145545183232 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld: Shutdown complete
+
+2018-10-13 10:52:20 3790 mysqld_safe mysqld from pid file /Applications/XAMPP/xamppfiles/var/mysql/Victors-MacBook-Pro.local.pid ended
+2018-10-13 10:56:02 5163 mysqld_safe Starting mysqld daemon with databases from /Applications/XAMPP/xamppfiles/var/mysql
+2018-10-13 10:56:02 140735803286400 [Note] Using unique option prefix 'key_buffer' is error-prone and can break in the future. Please use the full name 'key_buffer_size' instead.
+2018-10-13 10:56:02 140735803286400 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld (mysqld 10.1.32-MariaDB) starting as process 5309 ...
+2018-10-13 10:56:02 140735803286400 [Warning] Setting lower_case_table_names=2 because file system for /Applications/XAMPP/xamppfiles/var/mysql/ is case insensitive
+2018-10-13 10:56:02 140735803286400 [Note] InnoDB: innodb_empty_free_list_algorithm has been changed to legacy because of small buffer pool size. In order to use backoff, increase buffer pool at least up to 20MB.
+
+2018-10-13 10:56:02 140735803286400 [Note] InnoDB: Using mutexes to ref count buffer pool pages
+2018-10-13 10:56:02 140735803286400 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-10-13 10:56:02 140735803286400 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2018-10-13 10:56:02 140735803286400 [Note] InnoDB: GCC builtin __sync_synchronize() is used for memory barrier
+2018-10-13 10:56:02 140735803286400 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2018-10-13 10:56:02 140735803286400 [Note] InnoDB: Using SSE crc32 instructions
+2018-10-13 10:56:02 140735803286400 [Note] InnoDB: Initializing buffer pool, size = 16.0M
+2018-10-13 10:56:02 140735803286400 [Note] InnoDB: Completed initialization of buffer pool
+2018-10-13 10:56:02 140735803286400 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-10-13 10:56:02 140735803286400 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-10-13 10:56:02 140735803286400 [Note] InnoDB: Waiting for purge to start
+2018-10-13 10:56:03 140735803286400 [Note] InnoDB:  Percona XtraDB (http://www.percona.com) 5.6.38-83.0 started; log sequence number 9728704
+2018-10-13 10:56:03 123145413660672 [Note] InnoDB: Dumping buffer pool(s) not yet started
+2018-10-13 10:56:03 140735803286400 [Note] Plugin 'FEEDBACK' is disabled.
+2018-10-13 10:56:03 140735803286400 [Note] Server socket created on IP: '::'.
+2018-10-13 10:56:03 140735803286400 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld: ready for connections.
+Version: '10.1.32-MariaDB'  socket: '/Applications/XAMPP/xamppfiles/var/mysql/mysql.sock'  port: 3306  Source distribution
+2018-10-13 11:04:34 123145415806976 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld: Normal shutdown
+2018-10-13 11:04:34 123145415806976 [Note] Event Scheduler: Purging the queue. 0 events
+2018-10-13 11:04:34 123145411514368 [Note] InnoDB: FTS optimize thread exiting.
+2018-10-13 11:04:34 123145415806976 [Note] InnoDB: Starting shutdown...
+2018-10-13 11:04:35 123145415806976 [Note] InnoDB: Waiting for page_cleaner to finish flushing of buffer pool
+2018-10-13 11:04:36 123145415806976 [Note] InnoDB: Shutdown completed; log sequence number 10416159
+2018-10-13 11:04:36 123145415806976 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld: Shutdown complete
+
+2018-10-13 11:04:36 5163 mysqld_safe mysqld from pid file /Applications/XAMPP/xamppfiles/var/mysql/Victors-MacBook-Pro.local.pid ended
+2018-10-13 11:05:23 6157 mysqld_safe Starting mysqld daemon with databases from /Applications/XAMPP/xamppfiles/var/mysql
+2018-10-13 11:05:23 140735803286400 [Note] Using unique option prefix 'key_buffer' is error-prone and can break in the future. Please use the full name 'key_buffer_size' instead.
+2018-10-13 11:05:23 140735803286400 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld (mysqld 10.1.32-MariaDB) starting as process 6303 ...
+2018-10-13 11:05:23 140735803286400 [Warning] Setting lower_case_table_names=2 because file system for /Applications/XAMPP/xamppfiles/var/mysql/ is case insensitive
+2018-10-13 11:05:23 140735803286400 [Note] InnoDB: innodb_empty_free_list_algorithm has been changed to legacy because of small buffer pool size. In order to use backoff, increase buffer pool at least up to 20MB.
+
+2018-10-13 11:05:23 140735803286400 [Note] InnoDB: Using mutexes to ref count buffer pool pages
+2018-10-13 11:05:23 140735803286400 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-10-13 11:05:23 140735803286400 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2018-10-13 11:05:23 140735803286400 [Note] InnoDB: GCC builtin __sync_synchronize() is used for memory barrier
+2018-10-13 11:05:23 140735803286400 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2018-10-13 11:05:23 140735803286400 [Note] InnoDB: Using SSE crc32 instructions
+2018-10-13 11:05:23 140735803286400 [Note] InnoDB: Initializing buffer pool, size = 16.0M
+2018-10-13 11:05:23 140735803286400 [Note] InnoDB: Completed initialization of buffer pool
+2018-10-13 11:05:23 140735803286400 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-10-13 11:05:23 140735803286400 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-10-13 11:05:23 140735803286400 [Note] InnoDB: Waiting for purge to start
+2018-10-13 11:05:23 140735803286400 [Note] InnoDB:  Percona XtraDB (http://www.percona.com) 5.6.38-83.0 started; log sequence number 10416159
+2018-10-13 11:05:23 123145330610176 [Note] InnoDB: Dumping buffer pool(s) not yet started
+2018-10-13 11:05:23 140735803286400 [Note] Plugin 'FEEDBACK' is disabled.
+2018-10-13 11:05:23 140735803286400 [Note] Server socket created on IP: '::'.
+2018-10-13 11:05:23 140735803286400 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld: ready for connections.
+Version: '10.1.32-MariaDB'  socket: '/Applications/XAMPP/xamppfiles/var/mysql/mysql.sock'  port: 3306  Source distribution
+2018-10-13 11:06:58 123145332756480 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld: Normal shutdown
+2018-10-13 11:06:58 123145332756480 [Note] Event Scheduler: Purging the queue. 0 events
+2018-10-13 11:06:58 123145328463872 [Note] InnoDB: FTS optimize thread exiting.
+2018-10-13 11:06:58 123145332756480 [Note] InnoDB: Starting shutdown...
+2018-10-13 11:06:59 123145332756480 [Note] InnoDB: Waiting for page_cleaner to finish flushing of buffer pool
+2018-10-13 11:07:00 123145332756480 [Note] InnoDB: Shutdown completed; log sequence number 10416169
+2018-10-13 11:07:00 123145332756480 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld: Shutdown complete
+
+2018-10-13 11:07:00 6157 mysqld_safe mysqld from pid file /Applications/XAMPP/xamppfiles/var/mysql/Victors-MacBook-Pro.local.pid ended
+2018-10-13 11:07:06 6501 mysqld_safe Starting mysqld daemon with databases from /Applications/XAMPP/xamppfiles/var/mysql
+2018-10-13 11:07:06 140735803286400 [Note] Using unique option prefix 'key_buffer' is error-prone and can break in the future. Please use the full name 'key_buffer_size' instead.
+2018-10-13 11:07:06 140735803286400 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld (mysqld 10.1.32-MariaDB) starting as process 6647 ...
+2018-10-13 11:07:06 140735803286400 [Warning] Setting lower_case_table_names=2 because file system for /Applications/XAMPP/xamppfiles/var/mysql/ is case insensitive
+2018-10-13 11:07:06 140735803286400 [Note] InnoDB: innodb_empty_free_list_algorithm has been changed to legacy because of small buffer pool size. In order to use backoff, increase buffer pool at least up to 20MB.
+
+2018-10-13 11:07:06 140735803286400 [Note] InnoDB: Using mutexes to ref count buffer pool pages
+2018-10-13 11:07:06 140735803286400 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-10-13 11:07:06 140735803286400 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2018-10-13 11:07:06 140735803286400 [Note] InnoDB: GCC builtin __sync_synchronize() is used for memory barrier
+2018-10-13 11:07:06 140735803286400 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2018-10-13 11:07:06 140735803286400 [Note] InnoDB: Using SSE crc32 instructions
+2018-10-13 11:07:06 140735803286400 [Note] InnoDB: Initializing buffer pool, size = 16.0M
+2018-10-13 11:07:06 140735803286400 [Note] InnoDB: Completed initialization of buffer pool
+2018-10-13 11:07:06 140735803286400 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-10-13 11:07:06 140735803286400 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-10-13 11:07:06 140735803286400 [Note] InnoDB: Waiting for purge to start
+2018-10-13 11:07:06 140735803286400 [Note] InnoDB:  Percona XtraDB (http://www.percona.com) 5.6.38-83.0 started; log sequence number 10416169
+2018-10-13 11:07:06 123145440534528 [Note] InnoDB: Dumping buffer pool(s) not yet started
+2018-10-13 11:07:06 140735803286400 [Note] Plugin 'FEEDBACK' is disabled.
+2018-10-13 11:07:06 140735803286400 [Note] Server socket created on IP: '::'.
+2018-10-13 11:07:07 140735803286400 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld: ready for connections.
+Version: '10.1.32-MariaDB'  socket: '/Applications/XAMPP/xamppfiles/var/mysql/mysql.sock'  port: 3306  Source distribution
+2018-10-13 11:08:30 123145442680832 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld: Normal shutdown
+2018-10-13 11:08:30 123145442680832 [Note] Event Scheduler: Purging the queue. 0 events
+2018-10-13 11:08:30 123145438388224 [Note] InnoDB: FTS optimize thread exiting.
+2018-10-13 11:08:30 123145442680832 [Note] InnoDB: Starting shutdown...
+2018-10-13 11:08:31 123145442680832 [Note] InnoDB: Waiting for page_cleaner to finish flushing of buffer pool
+2018-10-13 11:08:32 123145442680832 [Note] InnoDB: Shutdown completed; log sequence number 10416179
+2018-10-13 11:08:32 123145442680832 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld: Shutdown complete
+
+2018-10-13 11:08:32 6501 mysqld_safe mysqld from pid file /Applications/XAMPP/xamppfiles/var/mysql/Victors-MacBook-Pro.local.pid ended
+2018-10-13 11:08:43 6933 mysqld_safe Starting mysqld daemon with databases from /Applications/XAMPP/xamppfiles/var/mysql
+2018-10-13 11:08:43 140735803286400 [Note] Using unique option prefix 'key_buffer' is error-prone and can break in the future. Please use the full name 'key_buffer_size' instead.
+2018-10-13 11:08:43 140735803286400 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld (mysqld 10.1.32-MariaDB) starting as process 7079 ...
+2018-10-13 11:08:43 140735803286400 [Warning] Setting lower_case_table_names=2 because file system for /Applications/XAMPP/xamppfiles/var/mysql/ is case insensitive
+2018-10-13 11:08:43 140735803286400 [Note] InnoDB: innodb_empty_free_list_algorithm has been changed to legacy because of small buffer pool size. In order to use backoff, increase buffer pool at least up to 20MB.
+
+2018-10-13 11:08:43 140735803286400 [Note] InnoDB: Using mutexes to ref count buffer pool pages
+2018-10-13 11:08:43 140735803286400 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-10-13 11:08:43 140735803286400 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2018-10-13 11:08:43 140735803286400 [Note] InnoDB: GCC builtin __sync_synchronize() is used for memory barrier
+2018-10-13 11:08:43 140735803286400 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2018-10-13 11:08:43 140735803286400 [Note] InnoDB: Using SSE crc32 instructions
+2018-10-13 11:08:43 140735803286400 [Note] InnoDB: Initializing buffer pool, size = 16.0M
+2018-10-13 11:08:43 140735803286400 [Note] InnoDB: Completed initialization of buffer pool
+2018-10-13 11:08:43 140735803286400 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-10-13 11:08:43 140735803286400 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-10-13 11:08:43 140735803286400 [Note] InnoDB: Waiting for purge to start
+2018-10-13 11:08:43 140735803286400 [Note] InnoDB:  Percona XtraDB (http://www.percona.com) 5.6.38-83.0 started; log sequence number 10416179
+2018-10-13 11:08:43 123145511866368 [Note] InnoDB: Dumping buffer pool(s) not yet started
+2018-10-13 11:08:43 140735803286400 [Note] Plugin 'FEEDBACK' is disabled.
+2018-10-13 11:08:43 140735803286400 [Note] Server socket created on IP: '::'.
+2018-10-13 11:08:43 140735803286400 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld: ready for connections.
+Version: '10.1.32-MariaDB'  socket: '/Applications/XAMPP/xamppfiles/var/mysql/mysql.sock'  port: 3306  Source distribution
+2018-10-13 11:10:10 123145514012672 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld: Normal shutdown
+2018-10-13 11:10:10 123145514012672 [Note] Event Scheduler: Purging the queue. 0 events
+2018-10-13 11:10:10 123145509720064 [Note] InnoDB: FTS optimize thread exiting.
+2018-10-13 11:10:10 123145514012672 [Note] InnoDB: Starting shutdown...
+2018-10-13 11:10:10 123145514012672 [Note] InnoDB: Waiting for page_cleaner to finish flushing of buffer pool
+2018-10-13 11:10:12 123145514012672 [Note] InnoDB: Shutdown completed; log sequence number 10416189
+2018-10-13 11:10:12 123145514012672 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld: Shutdown complete
+
+2018-10-13 11:10:12 6933 mysqld_safe mysqld from pid file /Applications/XAMPP/xamppfiles/var/mysql/Victors-MacBook-Pro.local.pid ended
+2018-10-13 11:10:23 7536 mysqld_safe Starting mysqld daemon with databases from /Applications/XAMPP/xamppfiles/var/mysql
+2018-10-13 11:10:23 140735803286400 [Note] Using unique option prefix 'key_buffer' is error-prone and can break in the future. Please use the full name 'key_buffer_size' instead.
+2018-10-13 11:10:23 140735803286400 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld (mysqld 10.1.32-MariaDB) starting as process 7682 ...
+2018-10-13 11:10:23 140735803286400 [Warning] Setting lower_case_table_names=2 because file system for /Applications/XAMPP/xamppfiles/var/mysql/ is case insensitive
+2018-10-13 11:10:23 140735803286400 [Note] InnoDB: innodb_empty_free_list_algorithm has been changed to legacy because of small buffer pool size. In order to use backoff, increase buffer pool at least up to 20MB.
+
+2018-10-13 11:10:23 140735803286400 [Note] InnoDB: Using mutexes to ref count buffer pool pages
+2018-10-13 11:10:23 140735803286400 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-10-13 11:10:23 140735803286400 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2018-10-13 11:10:23 140735803286400 [Note] InnoDB: GCC builtin __sync_synchronize() is used for memory barrier
+2018-10-13 11:10:23 140735803286400 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2018-10-13 11:10:23 140735803286400 [Note] InnoDB: Using SSE crc32 instructions
+2018-10-13 11:10:23 140735803286400 [Note] InnoDB: Initializing buffer pool, size = 16.0M
+2018-10-13 11:10:23 140735803286400 [Note] InnoDB: Completed initialization of buffer pool
+2018-10-13 11:10:23 140735803286400 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-10-13 11:10:23 140735803286400 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-10-13 11:10:23 140735803286400 [Note] InnoDB: Waiting for purge to start
+2018-10-13 11:10:23 140735803286400 [Note] InnoDB:  Percona XtraDB (http://www.percona.com) 5.6.38-83.0 started; log sequence number 10416189
+2018-10-13 11:10:23 123145456656384 [Note] InnoDB: Dumping buffer pool(s) not yet started
+2018-10-13 11:10:23 140735803286400 [Note] Plugin 'FEEDBACK' is disabled.
+2018-10-13 11:10:23 140735803286400 [Note] Server socket created on IP: '::'.
+2018-10-13 11:10:24 140735803286400 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld: ready for connections.
+Version: '10.1.32-MariaDB'  socket: '/Applications/XAMPP/xamppfiles/var/mysql/mysql.sock'  port: 3306  Source distribution
+2018-10-13 13:46:19 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-13 13:46:19 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-13 13:46:19 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-13 13:46:19 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-13 13:46:19 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-13 13:46:19 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-13 13:46:19 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-13 13:46:19 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-13 13:46:19 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-13 13:46:19 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-13 13:46:19 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-13 13:46:19 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-13 13:46:19 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-13 13:46:19 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-13 13:46:19 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-13 13:46:19 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-13 13:46:19 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-13 13:46:19 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-13 13:46:19 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-13 13:46:19 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-13 13:46:19 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-13 13:46:19 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-13 13:46:19 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-13 13:46:19 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-13 13:46:19 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-13 13:46:19 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-13 13:46:19 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-13 13:46:19 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-13 14:59:22 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-13 14:59:22 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-13 14:59:22 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-13 14:59:22 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-13 14:59:22 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-13 14:59:22 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-13 14:59:22 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-13 14:59:22 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-13 14:59:22 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-13 14:59:22 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-13 14:59:22 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-13 14:59:22 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-13 14:59:22 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-13 14:59:22 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-13 14:59:22 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-13 14:59:22 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-13 14:59:22 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-13 14:59:22 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-13 14:59:22 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-13 14:59:22 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-13 14:59:22 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-13 14:59:22 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-13 14:59:22 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-13 14:59:22 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-13 14:59:22 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-13 14:59:22 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-13 14:59:22 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-13 14:59:22 123145459339264 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-13 18:04:33 123145458802688 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld: Normal shutdown
+2018-10-13 18:04:33 123145458802688 [Note] Event Scheduler: Purging the queue. 0 events
+2018-10-13 18:04:33 123145454510080 [Note] InnoDB: FTS optimize thread exiting.
+2018-10-13 18:04:33 123145458802688 [Note] InnoDB: Starting shutdown...
+2018-10-13 18:04:34 123145458802688 [Note] InnoDB: Waiting for page_cleaner to finish flushing of buffer pool
+2018-10-13 18:04:35 123145458802688 [Note] InnoDB: Shutdown completed; log sequence number 12121081
+2018-10-13 18:04:36 123145458802688 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld: Shutdown complete
+
+2018-10-21 22:42:46 1322 mysqld_safe Starting mysqld daemon with databases from /Applications/XAMPP/xamppfiles/var/mysql
+2018-10-21 22:42:47 140736281592704 [Note] Using unique option prefix 'key_buffer' is error-prone and can break in the future. Please use the full name 'key_buffer_size' instead.
+2018-10-21 22:42:47 140736281592704 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld (mysqld 10.1.32-MariaDB) starting as process 1468 ...
+2018-10-21 22:42:47 140736281592704 [Warning] Setting lower_case_table_names=2 because file system for /Applications/XAMPP/xamppfiles/var/mysql/ is case insensitive
+2018-10-21 22:42:47 140736281592704 [Note] InnoDB: innodb_empty_free_list_algorithm has been changed to legacy because of small buffer pool size. In order to use backoff, increase buffer pool at least up to 20MB.
+
+2018-10-21 22:42:47 140736281592704 [Note] InnoDB: Using mutexes to ref count buffer pool pages
+2018-10-21 22:42:47 140736281592704 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-10-21 22:42:47 140736281592704 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2018-10-21 22:42:47 140736281592704 [Note] InnoDB: GCC builtin __sync_synchronize() is used for memory barrier
+2018-10-21 22:42:47 140736281592704 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2018-10-21 22:42:48 140736281592704 [Note] InnoDB: Using SSE crc32 instructions
+2018-10-21 22:42:48 140736281592704 [Note] InnoDB: Initializing buffer pool, size = 16.0M
+2018-10-21 22:42:48 140736281592704 [Note] InnoDB: Completed initialization of buffer pool
+2018-10-21 22:42:48 140736281592704 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-10-21 22:42:48 140736281592704 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-10-21 22:42:48 140736281592704 [Note] InnoDB: Waiting for purge to start
+2018-10-21 22:42:48 140736281592704 [Note] InnoDB:  Percona XtraDB (http://www.percona.com) 5.6.38-83.0 started; log sequence number 12121081
+2018-10-21 22:42:48 123145410322432 [Note] InnoDB: Dumping buffer pool(s) not yet started
+2018-10-21 22:42:48 140736281592704 [Note] Plugin 'FEEDBACK' is disabled.
+2018-10-21 22:42:49 140736281592704 [Note] Server socket created on IP: '::'.
+2018-10-21 22:42:49 140736281592704 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld: ready for connections.
+Version: '10.1.32-MariaDB'  socket: '/Applications/XAMPP/xamppfiles/var/mysql/mysql.sock'  port: 3306  Source distribution
+2018-10-21 22:45:12 123145413005312 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-21 22:45:12 123145413005312 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-21 22:45:12 123145413005312 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-21 22:45:12 123145413005312 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-21 22:45:12 123145413005312 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-21 22:45:12 123145413005312 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-21 22:45:12 123145413005312 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-21 22:45:12 123145413005312 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-21 22:45:12 123145413005312 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-21 22:45:12 123145413005312 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-21 22:45:12 123145413005312 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-21 22:45:12 123145413005312 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-21 22:45:12 123145413005312 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-21 22:45:12 123145413005312 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-21 22:45:12 123145413005312 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-21 22:45:12 123145413005312 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-21 22:45:12 123145413005312 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-21 22:45:12 123145413005312 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-21 22:45:12 123145413005312 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-21 22:45:12 123145413005312 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-21 22:45:12 123145413005312 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-21 22:45:12 123145413005312 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-21 22:45:12 123145413005312 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-21 22:45:12 123145413005312 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-21 22:45:12 123145413005312 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-21 22:45:12 123145413005312 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-21 22:45:12 123145413005312 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-21 22:45:12 123145413005312 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2018-10-21 22:47:12 123145412468736 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld: Normal shutdown
+2018-10-21 22:47:12 123145412468736 [Note] Event Scheduler: Purging the queue. 0 events
+2018-10-21 22:47:12 123145408176128 [Note] InnoDB: FTS optimize thread exiting.
+2018-10-21 22:47:12 123145412468736 [Note] InnoDB: Starting shutdown...
+2018-10-21 22:47:13 123145412468736 [Note] InnoDB: Waiting for page_cleaner to finish flushing of buffer pool
+2018-10-21 22:47:14 123145412468736 [Note] InnoDB: Shutdown completed; log sequence number 12200781
+2018-10-21 22:47:15 123145412468736 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld: Shutdown complete
+
+2018-10-21 22:47:15 1322 mysqld_safe mysqld from pid file /Applications/XAMPP/xamppfiles/var/mysql/Victors-MacBook-Pro.local.pid ended
+2018-10-23 17:53:21 37578 mysqld_safe Starting mysqld daemon with databases from /Applications/XAMPP/xamppfiles/var/mysql
+2018-10-23 17:53:21 140736105608064 [Note] Using unique option prefix 'key_buffer' is error-prone and can break in the future. Please use the full name 'key_buffer_size' instead.
+2018-10-23 17:53:21 140736105608064 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld (mysqld 10.1.32-MariaDB) starting as process 37722 ...
+2018-10-23 17:53:21 140736105608064 [Warning] Setting lower_case_table_names=2 because file system for /Applications/XAMPP/xamppfiles/var/mysql/ is case insensitive
+2018-10-23 17:53:21 140736105608064 [ERROR] mysqld: Can't lock aria control file '/Applications/XAMPP/xamppfiles/var/mysql/aria_log_control' for exclusive use, error: 35. Will retry for 30 seconds
+2018-10-23 17:53:53 140736105608064 [ERROR] mysqld: Got error 'Could not get an exclusive lock; file is probably in use by another process' when trying to use aria control file '/Applications/XAMPP/xamppfiles/var/mysql/aria_log_control'
+2018-10-23 17:53:53 140736105608064 [ERROR] Plugin 'Aria' init function returned error.
+2018-10-23 17:53:53 140736105608064 [ERROR] Plugin 'Aria' registration as a STORAGE ENGINE failed.
+2018-10-23 17:53:53 140736105608064 [Note] InnoDB: innodb_empty_free_list_algorithm has been changed to legacy because of small buffer pool size. In order to use backoff, increase buffer pool at least up to 20MB.
+
+2018-10-23 17:53:53 140736105608064 [Note] InnoDB: Using mutexes to ref count buffer pool pages
+2018-10-23 17:53:53 140736105608064 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-10-23 17:53:53 140736105608064 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2018-10-23 17:53:53 140736105608064 [Note] InnoDB: GCC builtin __sync_synchronize() is used for memory barrier
+2018-10-23 17:53:53 140736105608064 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2018-10-23 17:53:53 140736105608064 [Note] InnoDB: Using SSE crc32 instructions
+2018-10-23 17:53:53 140736105608064 [Note] InnoDB: Initializing buffer pool, size = 16.0M
+2018-10-23 17:53:53 140736105608064 [Note] InnoDB: Completed initialization of buffer pool
+2018-10-23 17:53:53 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:53:53 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:53:53 140736105608064 [Note] InnoDB: Retrying to lock the first data file
+2018-10-23 17:53:54 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:53:54 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:53:55 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:53:55 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:53:56 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:53:56 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:53:57 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:53:57 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:53:58 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:53:58 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:53:59 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:53:59 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:00 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:00 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:01 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:01 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:02 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:02 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:03 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:03 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:04 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:04 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:05 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:05 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:06 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:06 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:07 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:07 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:08 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:08 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:09 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:09 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:10 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:10 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:11 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:11 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:12 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:12 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:13 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:13 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:14 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:14 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:15 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:15 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:16 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:16 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:17 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:17 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:18 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:18 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:19 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:19 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:20 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:20 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:21 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:21 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:21 37842 mysqld_safe Starting mysqld daemon with databases from /Applications/XAMPP/xamppfiles/var/mysql
+2018-10-23 17:54:21 140736105608064 [Note] Using unique option prefix 'key_buffer' is error-prone and can break in the future. Please use the full name 'key_buffer_size' instead.
+2018-10-23 17:54:21 140736105608064 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld (mysqld 10.1.32-MariaDB) starting as process 37988 ...
+2018-10-23 17:54:21 140736105608064 [Warning] Setting lower_case_table_names=2 because file system for /Applications/XAMPP/xamppfiles/var/mysql/ is case insensitive
+2018-10-23 17:54:21 140736105608064 [ERROR] mysqld: Can't lock aria control file '/Applications/XAMPP/xamppfiles/var/mysql/aria_log_control' for exclusive use, error: 35. Will retry for 30 seconds
+2018-10-23 17:54:22 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:22 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:23 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:23 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:24 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:24 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:25 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:25 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:26 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:26 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:27 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:27 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:28 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:28 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:29 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:29 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:30 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:30 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:31 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:31 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:32 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:32 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:33 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:33 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:34 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:34 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:35 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:35 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:36 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:36 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:37 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:37 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:38 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:38 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:39 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:39 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:40 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:40 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:41 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:41 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:42 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:42 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:43 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:43 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:44 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:44 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:45 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:45 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:46 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:46 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:47 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:47 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:48 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:48 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:49 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:49 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:50 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:50 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:51 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:51 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:52 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:52 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:52 140736105608064 [ERROR] mysqld: Got error 'Could not get an exclusive lock; file is probably in use by another process' when trying to use aria control file '/Applications/XAMPP/xamppfiles/var/mysql/aria_log_control'
+2018-10-23 17:54:52 140736105608064 [ERROR] Plugin 'Aria' init function returned error.
+2018-10-23 17:54:52 140736105608064 [ERROR] Plugin 'Aria' registration as a STORAGE ENGINE failed.
+2018-10-23 17:54:52 140736105608064 [Note] InnoDB: innodb_empty_free_list_algorithm has been changed to legacy because of small buffer pool size. In order to use backoff, increase buffer pool at least up to 20MB.
+
+2018-10-23 17:54:53 140736105608064 [Note] InnoDB: Using mutexes to ref count buffer pool pages
+2018-10-23 17:54:53 140736105608064 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-10-23 17:54:53 140736105608064 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2018-10-23 17:54:53 140736105608064 [Note] InnoDB: GCC builtin __sync_synchronize() is used for memory barrier
+2018-10-23 17:54:53 140736105608064 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2018-10-23 17:54:53 140736105608064 [Note] InnoDB: Using SSE crc32 instructions
+2018-10-23 17:54:53 140736105608064 [Note] InnoDB: Initializing buffer pool, size = 16.0M
+2018-10-23 17:54:53 140736105608064 [Note] InnoDB: Completed initialization of buffer pool
+2018-10-23 17:54:53 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:53 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:53 140736105608064 [Note] InnoDB: Retrying to lock the first data file
+2018-10-23 17:54:53 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:53 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:54 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:54 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:54 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:54 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:55 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:55 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:55 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:55 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:56 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:56 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:56 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:56 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:57 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:57 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:57 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:57 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:58 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:58 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:58 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:58 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:59 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:59 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:54:59 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:54:59 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:00 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:00 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:00 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:00 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:01 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:01 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:01 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:01 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:02 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:02 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:02 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:02 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:03 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:03 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:03 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:03 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:04 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:04 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:04 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:04 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:05 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:05 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:05 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:05 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:06 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:06 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:06 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:06 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:07 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:07 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:07 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:07 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:08 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:08 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:08 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:08 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:09 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:09 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:09 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:09 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:10 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:10 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:10 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:10 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:11 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:11 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:11 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:11 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:12 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:12 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:12 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:12 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:13 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:13 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:13 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:13 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:14 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:14 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:14 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:14 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:15 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:15 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:15 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:15 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:16 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:16 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:16 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:16 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:17 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:17 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:17 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:17 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:18 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:18 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:18 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:18 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:19 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:19 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:19 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:19 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:20 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:20 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:20 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:20 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:21 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:21 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:21 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:21 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:22 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:22 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:22 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:22 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:23 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:23 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:23 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:23 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:24 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:24 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:24 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:24 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:24 38232 mysqld_safe Starting mysqld daemon with databases from /Applications/XAMPP/xamppfiles/var/mysql
+2018-10-23 17:55:24 140736105608064 [Note] Using unique option prefix 'key_buffer' is error-prone and can break in the future. Please use the full name 'key_buffer_size' instead.
+2018-10-23 17:55:24 140736105608064 [Note] /Applications/XAMPP/xamppfiles/sbin/mysqld (mysqld 10.1.32-MariaDB) starting as process 38376 ...
+2018-10-23 17:55:24 140736105608064 [Warning] Setting lower_case_table_names=2 because file system for /Applications/XAMPP/xamppfiles/var/mysql/ is case insensitive
+2018-10-23 17:55:24 140736105608064 [ERROR] mysqld: Can't lock aria control file '/Applications/XAMPP/xamppfiles/var/mysql/aria_log_control' for exclusive use, error: 35. Will retry for 30 seconds
+2018-10-23 17:55:25 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:25 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:25 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:25 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:26 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:26 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:26 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:26 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:27 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:27 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:27 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:27 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:28 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:28 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:28 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:28 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:29 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:29 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:29 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:29 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:30 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:30 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:30 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:30 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:31 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:31 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:31 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:31 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:32 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:32 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:32 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:32 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:33 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:33 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:33 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:33 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:33 140736105608064 [Note] InnoDB: Unable to open the first data file
+2018-10-23 17:55:33 7fffad94f380  InnoDB: Operating system error number 35 in a file operation.
+InnoDB: Error number 35 means 'Resource temporarily unavailable'.
+InnoDB: Some operating system error numbers are described at
+InnoDB: http://dev.mysql.com/doc/refman/5.6/en/operating-system-error-codes.html
+2018-10-23 17:55:33 140736105608064 [ERROR] InnoDB: Can't open '/Applications/XAMPP/xamppfiles/var/mysql/ibdata1'
+2018-10-23 17:55:33 140736105608064 [ERROR] InnoDB: Could not open or create the system tablespace. If you tried to add new data files to the system tablespace, and it failed here, you should now edit innodb_data_file_path in my.cnf back to what it was, and remove the new ibdata files InnoDB created in this failed attempt. InnoDB only wrote those files full of zeros, but did not yet use them in any way. But be careful: do not remove old data files which contain your precious data!
+2018-10-23 17:55:33 140736105608064 [ERROR] Plugin 'InnoDB' init function returned error.
+2018-10-23 17:55:33 140736105608064 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2018-10-23 17:55:33 140736105608064 [Note] Plugin 'FEEDBACK' is disabled.
+2018-10-23 17:55:33 140736105608064 [ERROR] Unknown/unsupported storage engine: InnoDB
+2018-10-23 17:55:33 140736105608064 [ERROR] Aborting
+
+2018-10-23 17:55:33 37578 mysqld_safe mysqld from pid file /Applications/XAMPP/xamppfiles/var/mysql/Victors-MacBook-Pro.local.pid ended
+2018-10-23 17:55:34 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:34 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:35 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:35 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:36 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:36 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:37 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:37 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:38 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:38 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:39 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:39 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:40 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:40 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:41 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:41 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:42 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:42 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:43 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:43 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:44 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:44 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:45 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:45 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:46 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:46 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:47 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:47 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:48 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:48 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:49 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:49 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:50 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:50 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:51 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:51 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:52 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:52 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:53 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:53 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:54 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:54 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:55 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:55 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:55 140736105608064 [ERROR] mysqld: Got error 'Could not get an exclusive lock; file is probably in use by another process' when trying to use aria control file '/Applications/XAMPP/xamppfiles/var/mysql/aria_log_control'
+2018-10-23 17:55:55 140736105608064 [ERROR] Plugin 'Aria' init function returned error.
+2018-10-23 17:55:55 140736105608064 [ERROR] Plugin 'Aria' registration as a STORAGE ENGINE failed.
+2018-10-23 17:55:55 140736105608064 [Note] InnoDB: innodb_empty_free_list_algorithm has been changed to legacy because of small buffer pool size. In order to use backoff, increase buffer pool at least up to 20MB.
+
+2018-10-23 17:55:55 140736105608064 [Note] InnoDB: Using mutexes to ref count buffer pool pages
+2018-10-23 17:55:55 140736105608064 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-10-23 17:55:55 140736105608064 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2018-10-23 17:55:55 140736105608064 [Note] InnoDB: GCC builtin __sync_synchronize() is used for memory barrier
+2018-10-23 17:55:55 140736105608064 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2018-10-23 17:55:55 140736105608064 [Note] InnoDB: Using SSE crc32 instructions
+2018-10-23 17:55:55 140736105608064 [Note] InnoDB: Initializing buffer pool, size = 16.0M
+2018-10-23 17:55:55 140736105608064 [Note] InnoDB: Completed initialization of buffer pool
+2018-10-23 17:55:55 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:55 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:55 140736105608064 [Note] InnoDB: Retrying to lock the first data file
+2018-10-23 17:55:56 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:56 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:56 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:56 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:57 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:57 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:57 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:57 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:58 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:58 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:58 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:58 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:59 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:59 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:55:59 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:55:59 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:00 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:00 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:00 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:00 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:01 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:01 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:01 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:01 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:02 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:02 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:02 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:02 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:03 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:03 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:03 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:03 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:04 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:04 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:04 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:04 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:05 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:05 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:05 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:05 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:06 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:06 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:06 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:06 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:07 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:07 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:07 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:07 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:08 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:08 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:08 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:08 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:09 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:09 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:09 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:09 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:10 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:10 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:10 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:10 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:11 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:11 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:11 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:11 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:12 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:12 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:12 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:12 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:13 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:13 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:13 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:13 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:14 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:14 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:14 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:14 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:15 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:15 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:15 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:15 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:16 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:16 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:16 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:16 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:17 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:17 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:17 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:17 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:18 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:18 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:18 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:18 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:19 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:19 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:19 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:19 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:20 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:20 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:20 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:20 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:21 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:21 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:21 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:21 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:22 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:22 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:22 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:22 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:23 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:23 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:23 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:23 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:24 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:24 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:24 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:24 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:25 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:25 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:25 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:25 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:26 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:26 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:26 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:26 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:27 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:27 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:27 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:27 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:28 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:28 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:28 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:28 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:29 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:29 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:29 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:29 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:30 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:30 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:30 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:30 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:31 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:31 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:31 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:31 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:32 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:32 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:32 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:32 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:33 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:33 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:33 140736105608064 [Note] InnoDB: Unable to open the first data file
+2018-10-23 17:56:33 7fffad94f380  InnoDB: Operating system error number 35 in a file operation.
+InnoDB: Error number 35 means 'Resource temporarily unavailable'.
+InnoDB: Some operating system error numbers are described at
+InnoDB: http://dev.mysql.com/doc/refman/5.6/en/operating-system-error-codes.html
+2018-10-23 17:56:33 140736105608064 [ERROR] InnoDB: Can't open '/Applications/XAMPP/xamppfiles/var/mysql/ibdata1'
+2018-10-23 17:56:33 140736105608064 [ERROR] InnoDB: Could not open or create the system tablespace. If you tried to add new data files to the system tablespace, and it failed here, you should now edit innodb_data_file_path in my.cnf back to what it was, and remove the new ibdata files InnoDB created in this failed attempt. InnoDB only wrote those files full of zeros, but did not yet use them in any way. But be careful: do not remove old data files which contain your precious data!
+2018-10-23 17:56:33 140736105608064 [ERROR] Plugin 'InnoDB' init function returned error.
+2018-10-23 17:56:33 140736105608064 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2018-10-23 17:56:33 140736105608064 [Note] Plugin 'FEEDBACK' is disabled.
+2018-10-23 17:56:33 140736105608064 [ERROR] Unknown/unsupported storage engine: InnoDB
+2018-10-23 17:56:33 140736105608064 [ERROR] Aborting
+
+2018-10-23 17:56:33 37842 mysqld_safe mysqld from pid file /Applications/XAMPP/xamppfiles/var/mysql/Victors-MacBook-Pro.local.pid ended
+2018-10-23 17:56:33 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:33 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:34 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:34 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:35 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:35 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:36 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:36 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:37 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:37 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:38 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:38 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:39 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:39 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:40 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:40 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:41 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:41 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:42 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:42 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:43 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:43 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:44 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:44 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:45 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:45 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:46 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:46 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:47 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:47 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:48 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:48 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:49 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:49 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:50 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:50 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:51 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:51 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:52 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:52 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:53 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:53 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:54 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:54 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:55 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:55 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:56 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:56 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:57 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:57 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:58 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:58 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:56:59 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:56:59 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:57:00 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:57:00 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:57:01 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:57:01 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:57:02 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:57:02 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:57:03 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:57:03 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:57:04 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:57:04 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:57:05 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:57:05 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:57:06 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:57:06 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:57:07 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:57:07 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:57:08 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:57:08 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:57:09 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:57:09 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:57:10 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:57:10 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:57:11 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:57:11 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:57:12 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:57:12 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:57:13 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:57:13 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:57:14 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:57:14 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:57:15 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:57:15 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:57:16 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:57:16 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:57:17 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:57:18 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:57:19 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:57:19 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:57:20 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:57:20 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:57:21 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:57:21 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:57:22 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:57:22 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:57:23 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:57:23 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:57:24 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:57:24 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:57:25 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:57:25 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:57:26 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:57:26 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:57:27 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:57:27 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:57:28 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:57:28 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:57:29 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:57:29 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:57:30 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:57:30 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:57:31 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:57:31 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:57:32 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:57:32 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:57:33 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:57:33 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:57:34 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:57:34 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:57:35 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:57:35 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:57:36 140736105608064 [ERROR] InnoDB: Unable to lock /Applications/XAMPP/xamppfiles/var/mysql/ibdata1, error: 35
+2018-10-23 17:57:36 140736105608064 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2018-10-23 17:57:36 140736105608064 [Note] InnoDB: Unable to open the first data file
+2018-10-23 17:57:36 7fffad94f380  InnoDB: Operating system error number 35 in a file operation.
+InnoDB: Error number 35 means 'Resource temporarily unavailable'.
+InnoDB: Some operating system error numbers are described at
+InnoDB: http://dev.mysql.com/doc/refman/5.6/en/operating-system-error-codes.html
+2018-10-23 17:57:36 140736105608064 [ERROR] InnoDB: Can't open '/Applications/XAMPP/xamppfiles/var/mysql/ibdata1'
+2018-10-23 17:57:36 140736105608064 [ERROR] InnoDB: Could not open or create the system tablespace. If you tried to add new data files to the system tablespace, and it failed here, you should now edit innodb_data_file_path in my.cnf back to what it was, and remove the new ibdata files InnoDB created in this failed attempt. InnoDB only wrote those files full of zeros, but did not yet use them in any way. But be careful: do not remove old data files which contain your precious data!
+2018-10-23 17:57:36 140736105608064 [ERROR] Plugin 'InnoDB' init function returned error.
+2018-10-23 17:57:36 140736105608064 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2018-10-23 17:57:36 140736105608064 [Note] Plugin 'FEEDBACK' is disabled.
+2018-10-23 17:57:36 140736105608064 [ERROR] Unknown/unsupported storage engine: InnoDB
+2018-10-23 17:57:36 140736105608064 [ERROR] Aborting
+
+2018-10-23 17:57:36 38232 mysqld_safe mysqld from pid file /Applications/XAMPP/xamppfiles/var/mysql/Victors-MacBook-Pro.local.pid ended
