@@ -813,7 +813,7 @@ let app = {
 				let html = "";
 				app.finished();
 				if (selectEmpty)
-					html += `<option disabled selected value=''>School</option>`;
+					html += `<option  selected value=''>All Schools</option>`;
 				resp.schools.forEach(school => {
 					html += `<option value='${school.id}'>${school.name}</option>`;
 				});
