@@ -223,8 +223,12 @@ let app = {
 
 
 			if (filters.users.keyword) {
-				search += `keyword=${filters.users.keyword}`;
-			} else if (filters.users.a) {
+				search += `keyword=${filters.users.keyword}&`;
+			}
+
+
+
+			if (filters.users.a) {
 				search += "active=1";
 			} else if (filters.users.s) {
 				search += "suspended=1";
@@ -237,7 +241,7 @@ let app = {
         filters.users.limit
       }${search}`;
 
-			if (filters.users.school != null) {
+			if (filters.users.school != null&&filters.users.school != "") {
 				route = `${app.api}/admin/school/users/${filters.users.school}/${
           filters.users.page
         }/${filters.users.limit}${search}`;
@@ -344,7 +348,6 @@ let app = {
 				password: $('#activeModal input[name=cpassword]').val(),
 				role: $('#activeModal input[name=role]').val()
 			};
-
 			if (data.role != "SUPERADMIN" && data.role != "SCHOOL") {
 				data.school = $('#activeModal select[name=cschool]').val();
 			}
@@ -1555,6 +1558,111 @@ let app = {
 			document.getElementById("rides").innerHTML = resp.rides;
 		}
 	},
+	showNavbar() {
+		let fileName = document.location.pathname.split('/').pop();
+		let navbar = `   
+		<ul class="nav">
+          <li class="nav-item  ${fileName=='dashboard.html'?'active':''}">
+            <a class="nav-link" href="dashboard.html">
+              <i class="material-icons">dashboard</i>
+              <p>Dashboard</p>
+            </a>
+          </li>
+          <li class="nav-item ${fileName=='user.html'?'active':''}">
+            <a class="nav-link" href="./user.html">
+              <i class="material-icons">person</i>
+              <p>User Management</p>
+            </a>
+          </li>
+          <li class="nav-item ${fileName=='drivers.html'?'active':''}">
+            <a class="nav-link" href="./drivers.html">
+              <i class="material-icons">person</i>
+              <p>Drivers</p>
+            </a>
+          </li>
+          <li class="nav-item  ${fileName=='schools.html'?'active':''}">
+            <a class="nav-link" href="./schools.html">
+              <i class="material-icons">person</i>
+              <p>Schools</p>
+            </a>
+          </li>
+          <li class="nav-item ${fileName=='rides.html'?'active':''}">
+            <a class="nav-link" href="./rides.html">
+              <i class="material-icons">person</i>
+              <p>Rides</p>
+            </a>
+          </li>
+          <li class="nav-item ${fileName=='transactions.html'?'active':''}">
+            <a class="nav-link" href="./transactions.html">
+              <i class="material-icons">person</i>
+              <p>Transactions</p>
+            </a>
+          </li>
+          <li class="nav-item ${fileName=='singletransaction.html'?'active':''}">
+            <a class="nav-link" href="./singletransaction.html">
+              <i class="material-icons">person</i>
+              <p>Single Rides</p>
+            </a>
+          </li>
+          <li class="nav-item cadhide ${fileName=='payout.html'?'active':''}">
+              <a class="nav-link" href="./payout.html">
+                  <i class="material-icons">person</i>
+                  <p>Drivers Payout</p>
+              </a>
+          </li>
+          <li class="nav-item  ${fileName=='single_driver_payout.html'?'active':''}">
+                        <a class="nav-link" href="./single_driver_payout.html">
+                            <i class="material-icons">person</i>
+                            <p>Single Drivers Payout</p>
+                        </a>
+                    </li>
+          <li class="nav-item cadhide ${fileName=='school-payout.html'?'active':''}">
+              <a class="nav-link" href="./school-payout.html">
+                  <i class="material-icons">person</i>
+                  <p>Schools Payout</p>
+              </a>
+          </li>
+          <li class="nav-item ${fileName=='user_support.html'?'active':''}">
+              <a class="nav-link" href="./user_support.html">
+                <i class="material-icons">person</i>
+                <p>User Support</p>
+              </a>
+            </li>
+            <li class="nav-item cadhide ${fileName=='school_support.html'?'active':''}">
+                <a class="nav-link" href="./school_support.html">
+                  <i class="material-icons">person</i>
+                  <p>School Support</p>
+                </a>
+			</li>
+			<li class="nav-item cadhide ${fileName=='driver_support.html'?'active':''}">
+                <a class="nav-link" href="./driver_support.html">
+                  <i class="material-icons">person</i>
+                  <p>Driver Support</p>
+                </a>
+			</li>
+		<li class="nav-item cadhide ${fileName=='support.html'?'active':''}">
+            <a class="nav-link" href="./support.html">
+              <i class="material-icons">person</i>
+              <p>Support</p>
+            </a>
+          </li>
+
+          <li class="nav-item cadhide ${fileName=='priceshare.html'?'active':''}">
+            <a class="nav-link" href="./priceshare.html">
+              <i class="material-icons">person</i>
+              <p> Percentage Handling Info </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="app.logout()">
+              <i class="material-icons">logout</i>
+              <p>Logout</p>
+            </a>
+          </li>
+		</ul>
+		`
+		$('.sidebar-wrapper').html(navbar)
+	},
 
 	inituser: async () => {
 		try {
@@ -1580,6 +1688,7 @@ let app = {
 						a.dropdown-item.cadhide{ display: block !important; }
 		   				li.nav-item.cadhide{ display: block !important; }`;
 				document.getElementsByTagName("head")[0].appendChild(style);
+				app.showNavbar()
 			} else if ((resp.status == 200 && resp.role == 3) || resp.status == 401) {
 				msg.error("Unauthorized");
 				localStorage.removeItem("token");
