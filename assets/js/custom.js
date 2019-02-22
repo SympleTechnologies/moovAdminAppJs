@@ -49,7 +49,7 @@ const msg = {
 			alertify.prompt(title, defaultValue, function (ev, value) {
 				resolve(value)
 			}, function () {
-				reject(new Error("Cancled!"))
+				reject(new Error("Closed!"))
 			}).resizeTo(100, 100);
 		})
 
@@ -92,33 +92,38 @@ function toggleCheckbox(sourceElement, className) {
 		checkboxes[i].checked = sourceElement.checked;
 	}
 }
-const filterUser=(status)=>{
-      switch(status){
-        case 'all':{
-			filters.users.a = false;
-			filters.users.s = false;
-			filters.users.d = false;
-			app.getUsers()
-           break;
-        }
-        case 'active':{
-			filters.users.a = true; filters.users.s = false; filters.users.d = false; app.getUsers()
-           break;
-        }
-        case 'deactivated':{
-			filters.users.d = true; filters.users.a = false; filters.users.s = false; app.getUsers()
-           break;
-        }
-        case 'suspended':{
-			filters.users.s = true; filters.users.a = false; filters.users.d = false; app.getUsers()
-           break;
-		}
-		default:{
-			console.error("Wrong choice:",status)
-		}
+const filterUser = (status) => {
+	switch (status) {
+		case 'all':
+			{
+				filters.users.a = false;
+				filters.users.s = false;
+				filters.users.d = false;
+				app.getUsers()
+				break;
+			}
+		case 'active':
+			{
+				filters.users.a = true;filters.users.s = false;filters.users.d = false;app.getUsers()
+				break;
+			}
+		case 'deactivated':
+			{
+				filters.users.d = true;filters.users.a = false;filters.users.s = false;app.getUsers()
+				break;
+			}
+		case 'suspended':
+			{
+				filters.users.s = true;filters.users.a = false;filters.users.d = false;app.getUsers()
+				break;
+			}
+		default:
+			{
+				console.error("Wrong choice:", status)
+			}
 
-        
-      }
+
+	}
 };
 
 let app = {
@@ -142,7 +147,7 @@ let app = {
 				banks = resp.data;
 			} else {
 				msg.error(
-					"Error occured while processing your request, please check your n"
+					"Error occurred while processing your request, please check your n"
 				);
 				return;
 			}
@@ -218,8 +223,8 @@ let app = {
 
 		try {
 			search = "?";
-			if(filters.users.filter_role)
-				search+=`filter_role=${filters.users.filter_role}&`;
+			if (filters.users.filter_role)
+				search += `filter_role=${filters.users.filter_role}&`;
 
 
 			if (filters.users.keyword) {
@@ -236,12 +241,12 @@ let app = {
 				search += "deactivated=1";
 			}
 
-			
+
 			let route = `${app.api}/admin/users/${filters.users.page}/${
         filters.users.limit
       }${search}`;
 
-			if (filters.users.school != null&&filters.users.school != "") {
+			if (filters.users.school != null && filters.users.school != "") {
 				route = `${app.api}/admin/school/users/${filters.users.school}/${
           filters.users.page
         }/${filters.users.limit}${search}`;
@@ -777,24 +782,32 @@ let app = {
 	// schools
 	getSchoolsBackground: async container => {
 		let route = app.api + "/admin/schools?all=1";
-		result = await fetch(route, {
-			headers: new Headers({
-				"Content-Type": "application/json",
-				Token: localStorage.getItem("token")
-			}),
-			method: "GET"
-		});
-		resp = await result.json();
+		app.loading();
+		try {
+			result = await fetch(route, {
+				headers: new Headers({
+					"Content-Type": "application/json",
+					Token: localStorage.getItem("token")
+				}),
+				method: "GET"
+			});
+			resp = await result.json();
 
-		let html = "<select name='cschool' class='form-control'>";
-		for (let i in resp.schools) {
-			let school = resp.schools[i];
-			html += `<option value="${school.id}">${school.name}</option>`;
+			let html = "<select name='cschool' class='form-control'>";
+			for (let i in resp.schools) {
+				let school = resp.schools[i];
+				html += `<option value="${school.id}">${school.name}</option>`;
+			}
+			html += "</select>";
+			if (!container)
+				return html;
+			container.innerHTML = html;
+		} catch (e) {
+				msg.alert("Error occurred while fetching school details")
 		}
-		html += "</select>";
-		if (!container)
-			return html;
-		container.innerHTML = html;
+		finally{
+			app.finished();
+		}
 	},
 
 	getRolesBackground: async container => {},
@@ -1394,7 +1407,7 @@ let app = {
 				}
 			} catch (e) {
 				app.finished();
-				msg.error("Unknown error occured while processing your request!");
+				msg.error("Unknown error occurred while processing your request!");
 			}
 		},
 
@@ -1423,7 +1436,7 @@ let app = {
 				}
 			} catch (e) {
 				app.finished();
-				msg.error("Unknown error occured while processing your request!");
+				msg.error("Unknown error occurred while processing your request!");
 			}
 		}
 	},
