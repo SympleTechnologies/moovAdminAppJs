@@ -550,29 +550,34 @@ let app = {
 		container.innerHTML = html;
 	},
 	getAllTransactions: async () => {
-		let route = `${app.api}/admin/transactions/${filters.transactions.page}/${
+		try {
+			let route = `${app.api}/admin/transactions/${filters.transactions.page}/${
       filters.transactions.limit
     }?keyword=${filters.transactions.keyword}&school=${
       filters.transactions.school
     }&date=${filters.transactions.date}`;
 
-		app.loading();
+			app.loading();
 
-		result = await fetch(route, {
-			headers: new Headers({
-				"Content-Type": "application/json",
-				Token: localStorage.getItem("token")
-			}),
-			method: "GET"
-		});
-		resp = await result.json();
+			result = await fetch(route, {
+				headers: new Headers({
+					"Content-Type": "application/json",
+					Token: localStorage.getItem("token")
+				}),
+				method: "GET"
+			});
+			resp = await result.json();
 
-		app.renderTransactions(
-			document.getElementById("transactions"),
-			resp.transactions
-		);
+			app.renderTransactions(
+				document.getElementById("transactions"),
+				resp.transactions
+			);
+		} catch (e) {
+			msg.alert("Error occurred while fetching!")
+		} finally {
+			app.finished();
+		}
 
-		app.finished();
 	},
 	renderTransactions: (container, transactions) => {
 		let html = "";
@@ -598,17 +603,17 @@ let app = {
 			if (page == 1) {
 				let row = `
 							<tr>
-								<td> <button onclick="filters.transactions.page++; app.getAllTransactions()">Next</button> </td>
+								<td> <button class='btn btn-info' onclick="filters.transactions.page++; app.getAllTransactions()">Next</button> </td>
 							</tr>
 						`;
 				html += row;
 			} else {
 				let row = `
 							<tr>
-								<td> <button onclick="if(filters.transactions.page == 1){ return; } filters.transactions.page--; app.getAllTransactions();">Prev</button> </td>
+								<td> <button class='btn btn-info' onclick="if(filters.transactions.page == 1){ return; } filters.transactions.page--; app.getAllTransactions();">Prev</button> </td>
 								<td> </td>
 								<td> </td>
-								<td> <button onclick="filters.transactions.page++; app.getAllTransactions()">Next</button> </td>
+								<td> <button class='btn btn-info' onclick="filters.transactions.page++; app.getAllTransactions()">Next</button> </td>
 							</tr>
 						`;
 				html += row;
@@ -616,7 +621,7 @@ let app = {
 		} else {
 			let row = `
 						<tr>
-							<td> <button onclick="if(filters.transactions.page == 1){ return; } filters.transactions.page--; app.getAllTransactions();">Prev</button> </td>
+							<td> <button class='btn btn-info' onclick="if(filters.transactions.page == 1){ return; } filters.transactions.page--; app.getAllTransactions();">Prev</button> </td>
 						</tr>
 					`;
 			html += row;
@@ -639,7 +644,7 @@ let app = {
 	getDrivers: async (container, astable = true, withPayout = false) => {
 		let route = app.api + "/admin/drivers";
 
-		if (filters.drivers.school != null) {
+		if (filters.drivers.school != null && filters.drivers.school != '') {
 			route = `${
         app.api
       }/admin/drivers/school/${filters.drivers.school.toString()}/${
@@ -803,9 +808,8 @@ let app = {
 				return html;
 			container.innerHTML = html;
 		} catch (e) {
-				msg.alert("Error occurred while fetching school details")
-		}
-		finally{
+			msg.alert("Error occurred while fetching school details")
+		} finally {
 			app.finished();
 		}
 	},
@@ -829,7 +833,7 @@ let app = {
 				let html = "";
 				app.finished();
 				if (selectEmpty)
-					html += `<option  selected value=''>All Schools</option>`;
+					html += `<option  selected value>All Schools</option>`;
 				resp.schools.forEach(school => {
 					html += `<option value='${school.id}'>${school.name}</option>`;
 				});
