@@ -115,6 +115,40 @@ app = {
             app.finished();
         }
     },
+    sendUserSupportMessage: async(support_type='school') => {
+        try {
+            let data = {
+                subject: $('#schoolSupport input[name=subject]').val(),
+                message: $('#schoolSupport textarea[name=message]').val(),
+                school_id:app.institution_id,
+                message_type:support_type,
+                from:""
+            }
+            let route = `${app.api}/support/email`;
+            app.loading();
+            let result = await fetch(route, {
+                headers: new Headers({
+                    "Content-Type": "application/json",
+                    Token: localStorage.getItem("token")
+                }),
+                method: "POST",
+                body: JSON.stringify(data)
+            });
+            let resp = await result.json();
+            if (resp.status == 200) {
+                msg.closeAll()
+                msg.success(resp.message);
+            } else {
+                msg.error(resp.message);
+            }
+        } catch (e) {
+            console.error("Submit support message",e)
+            msg.error("Unknown error occured while processing your request!");
+        }
+        finally{
+            app.finished();
+        }
+    },
     sendSchoolSupport: async() => {
         try {
             let data = {
