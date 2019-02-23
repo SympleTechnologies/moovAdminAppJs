@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "C:\\xampp\\htdocs\\moov\\moov_pay"
+		},
+		{
+			"path": "C:\\xampp\\htdocs\\moov\\api"
 		}
 	],
 	"settings": {}

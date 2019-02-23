@@ -135,7 +135,7 @@ app = {
                 body: JSON.stringify(data)
             });
             let resp = await result.json();
-            if (resp.status == 200) {
+            if (resp.status == true) {
                 msg.closeAll()
                 msg.success(resp.message);
             } else {

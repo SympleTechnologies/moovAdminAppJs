@@ -1029,6 +1029,10 @@ let app = {
 			}
 		},
 		payoutSchoolAndDrivers: async (driver_id_list, school_id, user_email) => {
+			if(driver_id_list.length<1){
+				msg.alert("Please select at least one driver to payout!")
+				return;
+			}
 			c = await msg.confirm("Are you sure you want to payout Driver");
 			if (!c) return;
 			//let driver = app.drivers.retrieveDriverById(driver_id)
@@ -1212,6 +1216,10 @@ let app = {
 	schools: {
 		payoutSchools: async school_id_list => {
 			try {
+				if(school_id_list.length<1){
+					msg.alert("Please select at least one school to payout!")
+					return;
+				}
 				c = await msg.confirm("Are you sure you want to payout School(s)");
 				if (!c) return;
 				app.loading();
