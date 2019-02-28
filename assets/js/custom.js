@@ -218,6 +218,15 @@ let app = {
 		msg.closeAll()
 	},
 
+	renderErrorMessageWhenEmpty: (data, dataName = 'data', colSpan = 4) => {
+		if (data && data.length)
+			return "";
+		return `<tr>
+								<td colspan=${colSpan}> <h2 style='text-align:center;'>No ${dataName} to display!</h2> </td>
+						</tr>`;
+
+	},
+
 	getUsers: async () => {
 		app.loading();
 
@@ -300,7 +309,7 @@ let app = {
 						</tr>
 					`;
 				}
-
+				html += app.renderErrorMessageWhenEmpty(resp.users, "users");
 				/* --------- PAGINATION ------------------- find a way to abstract this for all lists */
 				let page = resp.page;
 				let totalPages = resp.totalPages;
@@ -501,6 +510,7 @@ let app = {
 
 	renderRides: (container, rides) => {
 		let html = "";
+		html+=app.renderErrorMessageWhenEmpty(rides,'rides',6)
 		for (i in rides) {
 			let ride = rides[i];
 			let row = `
@@ -581,6 +591,7 @@ let app = {
 	},
 	renderTransactions: (container, transactions) => {
 		let html = "";
+		html+=app.renderErrorMessageWhenEmpty(transactions,'transactions',6)
 		for (i in transactions) {
 			let transaction = transactions[i];
 			let row = `
@@ -732,23 +743,21 @@ let app = {
 			`;
 				html += row;
 			}
-		} catch (e) {
-			console.error("Error", e);
-		}
 
-		/* --------- PAGINATION ------------------- find a way to abstract this for all lists */
-		let page = resp.page;
-		let totalPages = resp.totalPages;
-		if (totalPages > page) {
-			if (page == 1) {
-				let row = `
+			html += app.renderErrorMessageWhenEmpty(drivers, "drivers");
+			/* --------- PAGINATION ------------------- find a way to abstract this for all lists */
+			let page = resp.page;
+			let totalPages = resp.totalPages;
+			if (totalPages > page) {
+				if (page == 1) {
+					let row = `
 							<tr>
 								<td> <button class='btn btn-info' onclick="filters.drivers.page++; app.getDrivers()">Next</button> </td>
 							</tr>
 						`;
-				html += row;
-			} else {
-				let row = `
+					html += row;
+				} else {
+					let row = `
 							<tr>
 								<td> <button class='btn btn-info' onclick="if(filters.drivers.page == 1){ return; } filters.drivers.page--; app.getDrivers();">Prev</button> </td>
 								<td> </td>
@@ -756,19 +765,23 @@ let app = {
 								<td> <button class='btn btn-info' onclick="filters.drivers.page++; app.getDrivers()">Next</button> </td>
 							</tr>
 						`;
-				html += row;
-			}
-		} else {
-			let row = `
+					html += row;
+				}
+			} else {
+				let row = `
 						<tr>
 							<td> <button class='btn btn-info' onclick="if(filters.drivers.page == 1){ return; } filters.drivers.page--; app.getDrivers();">Prev</button> </td>
 						</tr>
 					`;
-			html += row;
-		}
-		/* ----------- END PAGINATION ============== */
+				html += row;
+			}
+			/* ----------- END PAGINATION ============== */
 
-		container.innerHTML = html;
+			container.innerHTML = html;
+		} catch (e) {
+			console.error("Error", e);
+			msg.error("Error occured while fetching drivers!")
+		}
 	},
 
 	renderDriversAsDropDown: (container, drivers) => {
@@ -879,6 +892,7 @@ let app = {
 
 	renderSchoolsAsTable: (container, schools, isPayoutTable) => {
 		let html = "";
+		html += app.renderErrorMessageWhenEmpty(schools, "schools");
 
 		for (let i in schools) {
 			let school = schools[i];
@@ -1029,7 +1043,7 @@ let app = {
 			}
 		},
 		payoutSchoolAndDrivers: async (driver_id_list, school_id, user_email) => {
-			if(driver_id_list.length<1){
+			if (driver_id_list.length < 1) {
 				msg.alert("Please select at least one driver to payout!")
 				return;
 			}
@@ -1216,7 +1230,7 @@ let app = {
 	schools: {
 		payoutSchools: async school_id_list => {
 			try {
-				if(school_id_list.length<1){
+				if (school_id_list.length < 1) {
 					msg.alert("Please select at least one school to payout!")
 					return;
 				}

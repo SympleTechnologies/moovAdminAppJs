@@ -2,6 +2,7 @@ app = {
     ...app,
     support_messages: null,
     getAllSupportMessages: async (supportType='user') => {
+        try{
         let route = `${app.api}/admin/supports/${filters.supports.page}/${
             filters.supports.limit
         }?keyword=${filters.supports.keyword}&school=${
@@ -17,13 +18,20 @@ app = {
         });
         resp = await result.json();
         app.support_messages = resp.messages;
+        
         app.renderSupportMessages(
             document.getElementById("support_messages"),
             resp.messages,
             supportType
         );
+        }catch(e){
+            msg.error("Sorry, an error occured while fetching messages!");
+        }
+        finally{
+            app.finished();
+        }
 
-        app.finished();
+       
     },
     async showMessageDetailsPopup(messageID) {
         const message = this.support_messages.find((message) => message.id === messageID);
@@ -188,7 +196,8 @@ app = {
         			<td>${transaction.amount}</td>
         			<td>${transaction.date}</td>
         			<td>${Humanize.capitalize(transaction.type.replace("_", " "))}</td>
-        			<td>${Humanize.capitalize(transaction.status)}</td> */
+                    <td>${Humanize.capitalize(transaction.status)}</td> */
+        html+=app.renderErrorMessageWhenEmpty(supports,'supports')
         for (i in supports) {
             let message = supports[i];
             let row = `
