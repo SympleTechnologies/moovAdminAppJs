@@ -102,17 +102,17 @@
             </a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="./user_support.html">
-                <i class="material-icons">person</i>
-                <p>User Support</p>
-              </a>
-            </li>
-            <li class="nav-item cadhide">
-                <a class="nav-link" href="./school_support.html">
-                  <i class="material-icons">person</i>
-                  <p>School Support</p>
-                </a>
-              </li>
+            <a class="nav-link" href="./user_support.html">
+              <i class="material-icons">person</i>
+              <p>User Support</p>
+            </a>
+          </li>
+          <li class="nav-item cadhide">
+            <a class="nav-link" href="./school_support.html">
+              <i class="material-icons">person</i>
+              <p>School Support</p>
+            </a>
+          </li>
           <li class="nav-item cadhide">
             <a class="nav-link" href="./support.html">
               <i class="material-icons">person</i>
@@ -202,38 +202,38 @@
               <div class="form-group">
                 <div class="input-group filter-group">
                   <div class="input-group-prepend">
-    <label class="input-group-text filter-label">Filter By:</label>
-  </div>
-                <input type="text" onchange="filters.users.keyword = this.value; app.getUsers();" class="form-control"
-                  placeholder="Name,Email" aria-label="Search Users" aria-describedby="basic-addon2">
+                    <label class="input-group-text filter-label">Filter By:</label>
                   </div>
+                  <input type="text" onchange="filters.users.keyword = this.value; app.getUsers();" class="form-control"
+                    placeholder="Name,Email" aria-label="Search Users" aria-describedby="basic-addon2">
+                </div>
               </div>
               <div class="form-group">
                 <div class="input-group filter-group">
                   <div class="input-group-prepend">
-    <label class="input-group-text filter-label">Filter By:</label>
-  </div>
-                <select id="selectSchools" class='form-control minimal' onchange="filters.users.school = document.getElementById('selectSchools').value; app.getUsers();">
+                    <label class="input-group-text filter-label">Filter By:</label>
+                  </div>
+                  <select id="selectSchools" class='form-control minimal' onchange="filters.users.school = document.getElementById('selectSchools').value; app.getUsers();">
 
-                </select>
+                  </select>
                 </div>
               </div>
               <!--<button class='btn' onclick=''>Search Users For Selected School </button>-->
             </div>
             <div class="col-md-3">
-                <div class="form-group">
-                    <div class="input-group filter-group">
-                      <div class="input-group-prepend">
-                        <label class="input-group-text filter-label">Filter By:</label>
-                      </div>
-                      <select onchange="filterUser(this.value)" id="" class='form-control minimal' onchange="filters.users.school = document.getElementById('selectSchools').value; app.getUsers();">
-                        <option value="all">All Users</option>
-                        <option value="active">Active Users</option>
-                        <option value="deactivated">Deactivated Users</option>
-                        <option value="suspended">Suspended Users</option>
-                      </select>
-                    </div>
+              <div class="form-group">
+                <div class="input-group filter-group">
+                  <div class="input-group-prepend">
+                    <label class="input-group-text filter-label">Filter By:</label>
                   </div>
+                  <select onchange="filterUser(this.value)" id="" class='form-control minimal' onchange="filters.users.school = document.getElementById('selectSchools').value; app.getUsers();">
+                    <option value="all">All Users</option>
+                    <option value="active">Active Users</option>
+                    <option value="deactivated">Deactivated Users</option>
+                    <option value="suspended">Suspended Users</option>
+                  </select>
+                </div>
+              </div>
               <!-- <button class="btn btn-block  btn-info" onclick="filters.users.a = false; filters.users.s = false; filters.users.d = false; app.getUsers()">All
                 Users</button>
               <button class="btn btn-block btn-info" onclick="filters.users.a = true; filters.users.s = false; filters.users.d = false; app.getUsers()">Active
@@ -267,7 +267,7 @@
                         Email
                       </th>
                     </thead>
-                    <tbody id="usersbody" >
+                    <tbody id="usersbody">
 
 
                     </tbody>
@@ -295,7 +295,7 @@
     </div>
   </div>
 
-  <script type="text/template"  id="add_school_modal">
+  <script type="text/template" id="add_school_modal">
     <div class="row">
       <div class="col-md-12">
         <div class="">
@@ -387,11 +387,40 @@
                   <input required type="email" name="cemail" id="cemail" class="form-control" />
                 </div>
               </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <label>Gender</label>
+                  <select name="gender" class="form-control">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <label>Phone Number</label>
+                  <div class="input-group">
+
+                    <input required type="text" value='+234' name="phone_country" class="form-control input-sm col-3" />
+                    <input required type="tel" name="phone_number" placeholder='800000000' class="form-control input-sm col-9" />
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-12" id="driver_optionals">
+
+
+
+              </div>
+
+
 
               <div class="col-12">
                 <div class="form-group">
                   <label>Password</label>
-                  <input required type="password" name="cpassword" id="cpassword" class="form-control" oninput='confirm_password.setCustomValidity((confirm_password.value != cpassword.value ? "Passwords did not match." : ""))' pattern=".{6,}" title="6 or more characters" />
+                  <input required type="password" name="cpassword" id="cpassword" class="form-control" oninput='confirm_password.setCustomValidity((confirm_password.value != cpassword.value ? "Passwords did not match." : ""))'
+                    pattern=".{6,}" title="6 or more characters" />
                 </div>
               </div>
 
@@ -400,7 +429,7 @@
               <div class="col-12">
                 <div class="form-group">
                   <label>Retype Password</label>
-                  <input required type="password" name="confirm_password"  class="form-control" oninput='confirm_password.setCustomValidity(confirm_password.value != cpassword.value ? "Passwords did not match." : "")' />
+                  <input required type="password" name="confirm_password" class="form-control" oninput='confirm_password.setCustomValidity(confirm_password.value != cpassword.value ? "Passwords did not match." : "")' />
                 </div>
               </div>
 
@@ -432,7 +461,7 @@
   <script src="assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
   <script src="assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
   <script src="assets/js/material-dashboard.min.js?v=2.1.0" type="text/javascript"></script>
-  
+
   <!-- Chartist JS -->
   <script src="assets/js/plugins/chartist.min.js"></script>
   <!--  Notifications Plugin    -->

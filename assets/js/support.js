@@ -94,6 +94,8 @@ app = {
      submitSupportMessage: async() => {
         try {
             let data = {
+                recipient_name: $('#activeModal input[name=recipient_name]').val(),
+                recipient_email_addresses: $('#activeModal input[name=recipient_email]').val(),
                 subject: $('#activeModal input[name=subject]').val(),
                 message: $('#activeModal textarea[name=message]').val(),
 				institution_id:app.institution_id

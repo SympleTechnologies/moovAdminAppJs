@@ -199,6 +199,7 @@ let app = {
 			case "DRIVER":
 			case "TESTER":
 				await app.getSchoolsBackground(document.getElementById("selectschool"));
+				(role=="DRIVER"&&app.showDriverOptionals())
 				document.getElementById("schooldiv").classList.remove("hidden");
 				break;
 			default:
@@ -212,9 +213,26 @@ let app = {
 		$('#activeModal input[name=role]').val(role);
 		//.classList.remove("hidden");
 	},
+	showDriverOptionals:()=>{
+			let optionals=`
+					
+
+					<div class="form-group">
+						<label>Car colour</label>
+						<input required type="text" name="car_colour" class="form-control" />
+					</div>
+					<div class="form-group">
+						<label>DOB</label>
+						<input required type="date" name="dob" class="form-control" />
+					</div>
+			`;
+			$('#driver_optionals').html(optionals)
+
+	},
 	closeadduser: () => {
 		//document.getElementById("schooldiv").classList.add("hidden");
 		//document.getElementById("addusermodal").classList.add("hidden");
+		$('#driver_optionals').html('');
 		msg.closeAll()
 	},
 
@@ -360,7 +378,12 @@ let app = {
 				lastname: $('#activeModal input[name=clastname]').val(),
 				email: $('#activeModal input[name=cemail]').val(),
 				password: $('#activeModal input[name=cpassword]').val(),
-				role: $('#activeModal input[name=role]').val()
+				role: $('#activeModal input[name=role]').val(),
+				phone_number: $('#activeModal input[name=phone_number]').val(),
+				phone_country: $('#activeModal input[name=phone_country]').val(),
+				gender: $('#activeModal select[name=gender]').val(),
+				dob: $('#activeModal input[name=dob]').val(),
+				car_colour: $('#activeModal input[name=car_colour]').val(),
 			};
 			if (data.role != "SUPERADMIN" && data.role != "SCHOOL") {
 				data.school = $('#activeModal select[name=cschool]').val();
@@ -583,7 +606,8 @@ let app = {
 				resp.transactions
 			);
 		} catch (e) {
-			msg.alert("Error occurred while fetching!")
+			console.error("Transaction error!",e)
+			msg.alert("Error occurred while fetching transactions!")
 		} finally {
 			app.finished();
 		}
