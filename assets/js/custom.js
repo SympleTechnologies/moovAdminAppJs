@@ -129,6 +129,7 @@ const filterUser = (status) => {
 let app = {
 	api: CONFIG.BASEURL, //"http://themoovapp.com/api/v2",
 	banks: null,
+	carModels:null,
 	getBanksLists: async () => {
 		try {
 			if (app.banks) return app.banks;
@@ -154,6 +155,39 @@ let app = {
 			app.banks = banks;
 			return banks;
 		}
+		
+		/* catch(e){
+				console.error(e)
+				return null;
+			} */
+		finally {
+			app.finished();
+		}
+	},
+	getCarModels: async () => {
+		try {
+			app.loading();
+			if(app.carModels)
+				return app.carModels;
+			let route = `${app.api}/auth/driver/car_models`;
+			let result = await fetch(route, {
+				headers: new Headers({
+					"Content-Type": "application/json",
+					Token: localStorage.getItem("token")
+				}),
+				method: "GET"
+			});
+			resp = await result.json();
+			if (resp.status == true) {
+				app.carModels=resp.data.details;
+				return resp.data.details;
+			} else {
+				msg.error(
+					"Error occurred while processing your request, please check your n"
+				);
+			}
+		}
+		
 		/* catch(e){
 				console.error(e)
 				return null;
@@ -172,7 +206,7 @@ let app = {
 			result = await fetch(app.api + "/admin", {
 				headers: new Headers({
 					"Content-Type": "application/json",
-					mode: "no-cors"
+					//mode: "no-cors"
 				}),
 				method: "POST",
 				body: JSON.stringify(data)
@@ -198,8 +232,18 @@ let app = {
 			case "USER":
 			case "DRIVER":
 			case "TESTER":
-				await app.getSchoolsBackground(document.getElementById("selectschool"));
-				(role=="DRIVER"&&app.showDriverOptionals())
+				//Using promise.all here to make this load faster
+				const promises=[app.getSchoolsBackground(document.getElementById("selectschool"))]
+				if(role=="DRIVER")
+					promises.push(app.showDriverOptionals());
+				try{
+					await Promise.all(promises)
+				}
+				catch(e){
+					msg.error("Error occured while loading data!")
+					app.finished()
+				}
+				
 				document.getElementById("schooldiv").classList.remove("hidden");
 				break;
 			default:
@@ -213,17 +257,63 @@ let app = {
 		$('#activeModal input[name=role]').val(role);
 		//.classList.remove("hidden");
 	},
-	showDriverOptionals:()=>{
+	showDriverOptionals: async ()=>{
+			let [carModels,banks]= await Promise.all([app.getCarModels(),app.getBanksLists()]);
+			let banksHtml = banks
+				.map(bank => {
+					return `<option value='${bank.id}'>${bank.name}</option>`;
+				})
+				.join("");
+			
+			let carModelOptions = carModels.map(carModel => {
+				return `<option value='${carModel.id}'>${carModel.name}</option>`;
+			})
+			.join("");
 			let optionals=`
 					
-
-					<div class="form-group">
-						<label>Car colour</label>
-						<input required type="text" name="car_colour" class="form-control" />
-					</div>
 					<div class="form-group">
 						<label>DOB</label>
 						<input required type="date" name="dob" class="form-control" />
+					</div>
+					<div class="form-group">
+						<label>Car Colour</label>
+						<input required type="text" name="car_colour" class="form-control" />
+					</div>
+					<div class="form-group">
+						<label>Plate Number</label>
+						<input required type="text" name="plate_number" class="form-control" />
+					</div>
+					<div class='form-group'>
+						<label>Car Model</label>
+						<select name='car_model' class='form-control' required>
+							${carModelOptions}
+						</select>
+					</div>
+					<div class="form-group">
+						<label>Car Capacity</label>
+						<input required type="number" name="car_capacity" min=1 class="form-control" />
+					</div>
+					<div class="form-group">
+						<label>Licence Number</label>
+						<input required type="text" name="licence_number" class="form-control" />
+					</div>
+					<div class="form-group">
+						<label>Expiry Date</label>
+						<input required type="date" name="expiry_date" class="form-control" />
+					</div>
+					<div class='form-group'>
+						<label>Bank</label>
+						<select name='bank_id' class='form-control' required>
+							${banksHtml}
+						</select>
+					</div>
+					<div class='form-group'>
+						<label>Account Name</label>
+						<input name='account_name' class='form-control' type='text' required/>  
+					</div>
+					<div class='form-group'>
+						<label>Account Number</label>
+						<input name='account_number' class='form-control' type='number' required/>  
 					</div>
 			`;
 			$('#driver_optionals').html(optionals)
@@ -384,7 +474,27 @@ let app = {
 				gender: $('#activeModal select[name=gender]').val(),
 				dob: $('#activeModal input[name=dob]').val(),
 				car_colour: $('#activeModal input[name=car_colour]').val(),
+				plate_number: $('#activeModal input[name=plate_number]').val(),
+				car_model: $('#activeModal select[name=car_model]').val(),
+				car_capacity: $('#activeModal input[name=car_capacity]').val(),
+				licence_number: $('#activeModal input[name=licence_number]').val(),
+				expiry_date: $('#activeModal input[name=expiry_date]').val(),
+				account_name: $('#activeModal input[name=account_name]').val(),
+				account_number: $('#activeModal input[name=account_number]').val(),
 			};
+			
+			if(data.role=='DRIVER'){
+				let bank_id=$('#activeModal select[name=bank_id]').val();
+				let bank = app.banks.find(bank => {
+					return Number(bank_id) == bank.id;
+				});
+				data["bank_name"] = bank.name;
+				data["bank_code"] = bank.code;
+			}
+
+			
+			
+
 			if (data.role != "SUPERADMIN" && data.role != "SCHOOL") {
 				data.school = $('#activeModal select[name=cschool]').val();
 			}
@@ -410,6 +520,7 @@ let app = {
 			app.getUsers();
 		} catch (e) {
 			console.error("Add User error", e)
+			msg.error("An unknown error occurred while adding user!");
 			app.finished();
 		}
 	},
@@ -1300,7 +1411,7 @@ let app = {
 			//document.getElementById("add_school_modal").classList.add("hidden");
 			//document.body.style.overflow = "visible";
 		},
-		async addSchoolAccountDetails(school_id, school_name) {
+		addSchoolAccountDetails: async (school_id, school_name) => {
 			let banks = await app.getBanksLists();
 			let banksHtml = banks
 				.map(bank => {

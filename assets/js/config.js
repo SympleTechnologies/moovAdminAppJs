@@ -1,5 +1,5 @@
 const CONFIG = {
-	BASEURL:window.location.host=='localhost'? window.location.protocol + "//" + window.location.host + "/moov/api/v2":"http://themoovapp.com/api/v2",
+	BASEURL:window.location.host=='localhost'? window.location.protocol + "//" + window.location.host + "/moov/api/v2":"https://moov-php-backend.herokuapp.com/v2",
 	//BASEURL:window.location.protocol + "//" + window.location.host + "/api/v2"
 }
 if (alertify) {
