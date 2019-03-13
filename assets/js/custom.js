@@ -242,6 +242,7 @@ let app = {
 				catch(e){
 					msg.error("Error occured while loading data!")
 					app.finished()
+					return;
 				}
 				
 				document.getElementById("schooldiv").classList.remove("hidden");
@@ -266,7 +267,7 @@ let app = {
 				.join("");
 			
 			let carModelOptions = carModels.map(carModel => {
-				return `<option value='${carModel.id}'>${carModel.name}</option>`;
+				return `<option data-image='${carModel.image}' value='${carModel.id}'>${carModel.name}</option>`;
 			})
 			.join("");
 			let optionals=`
@@ -284,8 +285,12 @@ let app = {
 						<input required type="text" name="plate_number" class="form-control" />
 					</div>
 					<div class='form-group'>
+						<img src='assets/img/preloader.gif'  style='display:none;width:100%;height:400px;'/>
+					</div>
+					<div class='form-group'>
 						<label>Car Model</label>
 						<select name='car_model' class='form-control' required>
+							<option></option>
 							${carModelOptions}
 						</select>
 					</div>
@@ -317,6 +322,22 @@ let app = {
 					</div>
 			`;
 			$('#driver_optionals').html(optionals)
+			setTimeout(()=>{
+				$('#activeModal select[name=car_model]').change(()=>{
+					let carImageID=$('#activeModal select[name=car_model]').val()
+					let carImage=carModels.find((carModel)=>carModel.id==carImageID).image
+					$('#activeModal img').css('display','block')
+					$('#activeModal img').attr('src','assets/img/preloader.gif')
+					let lazyImage=new Image()
+					lazyImage.src=carImage;
+					lazyImage.onload=()=>{
+						console.log("Lazy image loaded")
+						$('#activeModal img').attr('src',carImage)
+					};
+				});
+			},1000)
+			
+			
 
 	},
 	closeadduser: () => {
