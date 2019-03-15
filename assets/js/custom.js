@@ -240,6 +240,7 @@ let app = {
 					await Promise.all(promises)
 				}
 				catch(e){
+					console.error("showaddusererror",e)
 					msg.error("Error occured while loading data!")
 					app.finished()
 					return;
@@ -266,8 +267,8 @@ let app = {
 				})
 				.join("");
 			
-			let carModelOptions = carModels.map(carModel => {
-				return `<option data-image='${carModel.image}' value='${carModel.id}'>${carModel.name}</option>`;
+			let carMakeOptions = Object.keys(carModels).map(carMakeName => {
+				return `<option  value='${carMakeName}'>${carMakeName}</option>`;
 			})
 			.join("");
 			let optionals=`
@@ -288,10 +289,21 @@ let app = {
 						<img src='assets/img/preloader.gif'  style='display:none;width:100%;height:400px;'/>
 					</div>
 					<div class='form-group'>
+						<label>Car Make</label>
+						<select name='car_make' class='form-control' required>
+							<option></option>
+							${carMakeOptions}
+						</select>
+					</div>
+					<input type='hidden' name='car_model_id' />
+					<div class='form-group car_model'  style='display:none;'>
 						<label>Car Model</label>
 						<select name='car_model' class='form-control' required>
-							<option></option>
-							${carModelOptions}
+						</select>
+					</div>
+					<div class='form-group car_year_range'  style='display:none;'>
+						<label>Car Year Range</label>
+						<select name='car_year_range' class='form-control' required>
 						</select>
 					</div>
 					<div class="form-group">
@@ -321,20 +333,60 @@ let app = {
 						<input name='account_number' class='form-control' type='number' required/>  
 					</div>
 			`;
+			
 			$('#driver_optionals').html(optionals)
+			$('#activeModal img').css('display','none')
 			setTimeout(()=>{
+				$('#activeModal select[name=car_make]').change(()=>{
+					let carImageMake=$('#activeModal select[name=car_make]').val()
+					let cars=carModels[carImageMake]
+					$('#activeModal .car_model').css('display','block')
+					
+					$('#activeModal select[name=car_model]').html(
+						"<option selected disabled></option>"+
+						cars.map(car => {
+						return `<option value='${car.model}'>${car.model}</option>`;
+					}).join('\n'));
+					
+				});
+
 				$('#activeModal select[name=car_model]').change(()=>{
-					let carImageID=$('#activeModal select[name=car_model]').val()
-					let carImage=carModels.find((carModel)=>carModel.id==carImageID).image
+					let carImageModel=$('#activeModal select[name=car_model]').val()
+					let carImageMake=$('#activeModal select[name=car_make]').val()
+					let cars=carModels[carImageMake];
+					$('#activeModal select[name=car_year_range]').html(
+						"<option selected disabled></option>"+
+						cars
+						.filter((car)=>car.model==carImageModel)
+						.map(car =>`<option value='${car.id}'>${car.year_start}-${car.year_end}</option>`).join('\n')
+						);
+					$('#activeModal .car_year_range').css('display','block')
+					
+				});
+				$('#activeModal select[name=car_year_range]').change(()=>{
+					let carImageMake=$('#activeModal select[name=car_make]').val()
+					let cars=carModels[carImageMake];
+					let carModelID=$('#activeModal select[name=car_year_range]').val()
+					$('#activeModal select[name=car_model_id]').val(carModelID)
+					let carImage=cars.find((carModel)=>carModel.id==carModelID).image
 					$('#activeModal img').css('display','block')
 					$('#activeModal img').attr('src','assets/img/preloader.gif')
 					let lazyImage=new Image()
 					lazyImage.src=carImage;
+					$('#activeModal img').attr('src',lazyImage.src)
+					$('#activeModal img').get(0).scrollIntoViewIfNeeded()
 					lazyImage.onload=()=>{
 						console.log("Lazy image loaded")
-						$('#activeModal img').attr('src',carImage)
+						
 					};
-				});
+					lazyImage.onerror=()=>{
+						msg.alert("Error occured while loading image!")
+					}
+				})
+				
+					//
+					
+				
 			},1000)
 			
 			
@@ -343,6 +395,7 @@ let app = {
 	closeadduser: () => {
 		//document.getElementById("schooldiv").classList.add("hidden");
 		//document.getElementById("addusermodal").classList.add("hidden");
+		$('#activeModal img').css('display','none')
 		$('#driver_optionals').html('');
 		msg.closeAll()
 	},
