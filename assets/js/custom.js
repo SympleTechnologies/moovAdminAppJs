@@ -367,7 +367,7 @@ let app = {
 					let carImageMake=$('#activeModal select[name=car_make]').val()
 					let cars=carModels[carImageMake];
 					let carModelID=$('#activeModal select[name=car_year_range]').val()
-					$('#activeModal select[name=car_model_id]').val(carModelID)
+					$('#activeModal input[name=car_model_id]').val(carModelID)
 					let carImage=cars.find((carModel)=>carModel.id==carModelID).image
 					$('#activeModal img').css('display','block')
 					$('#activeModal img').attr('src','assets/img/preloader.gif')
@@ -549,7 +549,7 @@ let app = {
 				dob: $('#activeModal input[name=dob]').val(),
 				car_colour: $('#activeModal input[name=car_colour]').val(),
 				plate_number: $('#activeModal input[name=plate_number]').val(),
-				car_model: $('#activeModal select[name=car_model]').val(),
+				car_model: $('#activeModal input[name=car_model_id]').val(),
 				car_capacity: $('#activeModal input[name=car_capacity]').val(),
 				licence_number: $('#activeModal input[name=licence_number]').val(),
 				expiry_date: $('#activeModal input[name=expiry_date]').val(),
@@ -585,13 +585,14 @@ let app = {
 
 			if (resp.status == 200) {
 				app.closeadduser();
-				msg.success("User Added");
+				msg.success("User Added Successfully");
+				app.getUsers();
 			} else {
 				msg.error(resp.message);
 			}
 
 			app.finished();
-			app.getUsers();
+			
 		} catch (e) {
 			console.error("Add User error", e)
 			msg.error("An unknown error occurred while adding user!");
