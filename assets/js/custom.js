@@ -870,9 +870,14 @@ let app = {
         app.api
       }/admin/drivers/school/${filters.drivers.school.toString()}/${
         filters.drivers.page
-      }/${filters.drivers.limit}`;
+			}/${filters.drivers.limit}`;
+			if (filters.drivers.keyword) route += `?search=${filters.drivers.keyword}`;
 		}
-		if (filters.drivers.keyword) route += `?search=${filters.drivers.keyword}`;
+		else{
+			route += `?page=${filters.drivers.page}&limit=${filters.drivers.limit}`
+			if (filters.drivers.keyword) route += `&search=${filters.drivers.keyword}`;
+		}
+		
 		app.loading();
 
 		try {
@@ -924,7 +929,10 @@ let app = {
           }, '${driver.firstname}')">Activate Driver</a>
 				  <a class="dropdown-item" href="#" onclick="app.drivers.deactivate(${
             driver.id
-          }, '${driver.firstname}')">Deactivate Driver</a>
+					}, '${driver.firstname}')">Deactivate Driver</a>
+					<a class="dropdown-item cadhide" href="#" onclick="app.drivers.editDriver(${
+            driver.id
+          })">Edit Driver</a>
 				  <a class="dropdown-item cadhide" href="#" onclick="app.drivers.fundWallet(${
             driver.id
           }, '${driver.firstname}')">Fund Driver's Wallet</a>
