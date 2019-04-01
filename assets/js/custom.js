@@ -169,6 +169,10 @@ let app = {
 			app.loading();
 			if(app.carModels)
 				return app.carModels;
+			else if(localStorage.getItem('carModels')){
+				app.carModels=JSON.parse(localStorage.getItem('carModels'))
+				return app.carModels
+			}
 			let route = `${app.api}/auth/driver/car_models`;
 			let result = await fetch(route, {
 				headers: new Headers({
@@ -180,6 +184,7 @@ let app = {
 			resp = await result.json();
 			if (resp.status == true) {
 				app.carModels=resp.data.details;
+				localStorage.setItem('carModels',JSON.stringify(app.carModels))
 				return resp.data.details;
 			} else {
 				msg.error(
@@ -227,15 +232,17 @@ let app = {
 		}
 	},
 	showadduser: async role => {
+		app.loading()
 		switch (role) {
 			case "ADMIN":
 			case "USER":
 			case "DRIVER":
 			case "TESTER":
+				app.renderUserForm('add')
 				//Using promise.all here to make this load faster
 				const promises=[app.getSchoolsBackground(document.getElementById("selectschool"))]
 				if(role=="DRIVER")
-					promises.push(app.showDriverOptionals());
+					promises.push(app.showDriverOptionals('add'));
 				try{
 					await Promise.all(promises)
 				}
@@ -246,10 +253,10 @@ let app = {
 					return;
 				}
 				
-				document.getElementById("schooldiv").classList.remove("hidden");
+				document.getElementById("schooldiv")&&document.getElementById("schooldiv").classList.remove("hidden");
 				break;
 			default:
-				document.getElementById("schooldiv").classList.add("hidden");
+				document.getElementById("schooldiv")&&document.getElementById("schooldiv").classList.add("hidden");
 		}
 
 		msg.alert("<div id='activeModal'>" + $("#addusermodal").html() + "</div>", `Add ${role}`, {
@@ -257,9 +264,177 @@ let app = {
 			padding: false
 		})
 		$('#activeModal input[name=role]').val(role);
+		app.finished()
 		//.classList.remove("hidden");
 	},
-	showDriverOptionals: async ()=>{
+	showEditUser: async (id,role) => {
+		let driver;
+		switch (role) {
+			case "ADMIN":
+			case "USER":
+			case "DRIVER":
+			case "TESTER":
+				app.renderUserForm('edit')
+				//Using promise.all here to make this load faster
+				const promises=[app.getSchoolsBackground(document.getElementById("selectschool"))]
+				if(role=="DRIVER")
+					promises.push(app.showDriverOptionals('edit'));
+				try{
+
+					await Promise.all(promises)
+					if(role=="DRIVER") driver=await app.getDriverDetails(id);
+				}
+				catch(e){
+					console.error("showaddusererror",e)
+					msg.error("Error occured while loading data!")
+					app.finished()
+					return;
+				}
+				
+				document.getElementById("schooldiv") && document.getElementById("schooldiv").classList.remove("hidden");
+				break;
+			default:
+			document.getElementById("schooldiv") && document.getElementById("schooldiv").classList.add("hidden");
+		}
+
+		msg.alert("<div id='activeModal'>" + $("#addusermodal").html() + "</div>", `Add ${role}`, {
+			basic: true,
+			padding: false
+		})
+		$('#activeModal input[name=role]').val(role);
+		if(role=="DRIVER")
+			console.log(driver)||await app.populateDriverInformation(driver);
+		app.finished()
+		//.classList.remove("hidden");
+	},
+	populateDriverInformation: async (driver)=>{
+		$('#activeModal input[name=cfirstname]').val(driver.user.u_first_name);
+		$('#activeModal input[name=clastname]').val(driver.user.u_last_name);
+		$('#activeModal input[name=cemail]').val(driver.user.u_email)
+		$('#activeModal input[name=phone_number]').val(driver.user.u_phone)
+		$('#activeModal input[name=phone_country]').val(driver.user.u_phone_country)
+		$('#activeModal select[name=gender]').val(driver.user.u_gender)
+		$('#activeModal input[name=dob]').val(driver.dd_birth_day)
+		$('#activeModal input[name=car_colour]').val(driver.car_colour)
+		$('#activeModal input[name=plate_number]').val(driver.dd_car_number)
+		$('#activeModal input[name=car_capacity]').val(driver.dd_car_capacity)
+		$('#activeModal input[name=licence_number]').val(driver.dd_license)
+		$('#activeModal input[name=expiry_date]').val(driver.dd_expiery_date)
+		$('#activeModal input[name=account_name]').val(driver.bank_detail.bd_account_name)
+		$('#activeModal input[name=account_number]').val(driver.bank_detail.bd_account_number)
+		$('#activeModal select[name=cschool]').val(driver.user.u_edu_institution)
+		$('#activeModal input[name=car_model_id]').val(driver.dd_car_model_id)
+		$('#activeModal input[name=user_id]').val(driver.dd_driver_id)
+		const carModels=await app.getCarModels();
+		const carList=Object.keys(carModels).reduce((carList,current)=>{
+			carList=[...carList,...carModels[current]]; 
+			return carList;
+			},[]);
+		const car=carList.find((car)=>Number(car.id)===Number(driver.dd_car_model_id))
+		
+		$('#activeModal select[name=car_make]').val(car.make)
+		//console.log(car)
+		$('#activeModal select[name=car_model]').val(car.model)
+		//$('#activeModal .car_model').css('display','block')
+		$('#activeModal select[name=car_year_range]').val(car.id)
+		//$('#activeModal .car_year_range').css('display','block')
+		
+	},
+	renderUserForm: (actionType='add')=>{
+		const addUserHtmlForm=`
+			<div class="row">
+				<div class="col-md-12">
+					<div class="">
+						<div class="card-body">
+							<form class="row" onsubmit="${actionType=='add'?'app.addUser()':'app.editUser()'};return false;">
+								<div class="col-12">
+									<div class="form-group">
+										<label>First Name</label>
+										<input required type="text" name="cfirstname" id="cfirstname" class="form-control" />
+									</div>
+								</div>
+
+								<div class="col-12">
+									<div class="form-group">
+										<label>Last Name</label>
+										<input required type="text" name="clastname" id="clastname" class="form-control" />
+									</div>
+								</div>
+
+								<div class="col-12">
+									<div class="form-group">
+										<label>Email</label>
+										<input required type="email" name="cemail" id="cemail" class="form-control" />
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="form-group">
+										<label>Gender</label>
+										<select name="gender" class="form-control">
+											<option value="male">Male</option>
+											<option value="female">Female</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="form-group">
+										<label>Phone Number</label>
+										<div class="input-group">
+
+											<input required type="text" value='+234' name="phone_country" class="form-control input-sm col-3" />
+											<input required type="tel" name="phone_number" placeholder='800000000' class="form-control input-sm col-9" />
+										</div>
+
+									</div>
+								</div>
+
+								<div class="col-12" id="driver_optionals">
+
+
+
+								</div>
+
+
+
+								<div class="col-12">
+									<div class="form-group">
+										<label>Password</label>
+										<input ${actionType=='add'?'required':''} type="password" name="cpassword" id="cpassword" class="form-control" oninput='confirm_password.setCustomValidity((confirm_password.value != cpassword.value ? "Passwords did not match." : ""))'
+											pattern=".{6,}" title="6 or more characters" />
+									</div>
+								</div>
+
+								<input type="hidden" name="role" />
+								<input type="hidden" name="user_id" />
+
+								<div class="col-12">
+									<div class="form-group">
+										<label>Retype Password</label>
+										<input ${actionType=='add'?'required':''} type="password" name="confirm_password" class="form-control" oninput='confirm_password.setCustomValidity(confirm_password.value != cpassword.value ? "Passwords did not match." : "")' />
+									</div>
+								</div>
+
+								<div class="col-12 hidden" id="schooldiv">
+									<div class="form-group">
+										<label>Select School User Belongs To</label>
+										<div id="selectschool"></div>
+									</div>
+								</div>
+								<div style="display: flex;justify-content: center;width: 100%;">
+									<button type='submit' class="btn btn-primary">${actionType=='add'?'Add User':'Edit User'}</button>
+									<button type="button" class="btn btn-warning" onclick="msg.closeAll()"> Close </button>
+								</div>
+
+							</form>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		`
+		$('#addusermodal').html(addUserHtmlForm);
+	},
+	showDriverOptionals: async (actionType)=>{
 			let [carModels,banks]= await Promise.all([app.getCarModels(),app.getBanksLists()]);
 			let banksHtml = banks
 				.map(bank => {
@@ -298,12 +473,12 @@ let app = {
 					<input type='hidden' name='car_model_id' />
 					<div class='form-group car_model'  style='display:none;'>
 						<label>Car Model</label>
-						<select name='car_model' class='form-control' required>
+						<select ${actionType=='add'?'required':''} name='car_model' class='form-control'>
 						</select>
 					</div>
 					<div class='form-group car_year_range'  style='display:none;'>
 						<label>Car Year Range</label>
-						<select name='car_year_range' class='form-control' required>
+						<select ${actionType=='add'?'required':''} name='car_year_range' class='form-control'>
 						</select>
 					</div>
 					<div class="form-group">
@@ -336,7 +511,7 @@ let app = {
 			
 			$('#driver_optionals').html(optionals)
 			$('#activeModal img').css('display','none')
-			setTimeout(()=>{
+			let interval=setInterval(()=>{
 				$('#activeModal select[name=car_make]').change(()=>{
 					let carImageMake=$('#activeModal select[name=car_make]').val()
 					let cars=carModels[carImageMake]
@@ -347,7 +522,7 @@ let app = {
 						cars.map(car => {
 						return `<option value='${car.model}'>${car.model}</option>`;
 					}).join('\n'));
-					
+					(interval && clearInterval(interval));
 				});
 
 				$('#activeModal select[name=car_model]').change(()=>{
@@ -387,7 +562,7 @@ let app = {
 					//
 					
 				
-			},1000)
+			},3000)
 			
 			
 
@@ -529,6 +704,73 @@ let app = {
 
 			app.finished();
 		} catch (e) {
+			app.finished();
+		}
+	},
+	editUser: async ()=>{
+		app.loading();
+
+		try {
+			let data = {
+				user_id: $('#activeModal input[name=user_id]').val(),
+				firstname: $('#activeModal input[name=cfirstname]').val(),
+				lastname: $('#activeModal input[name=clastname]').val(),
+				email: $('#activeModal input[name=cemail]').val(),
+				password: $('#activeModal input[name=cpassword]').val(),
+				role: $('#activeModal input[name=role]').val(),
+				phone_number: $('#activeModal input[name=phone_number]').val(),
+				phone_country: $('#activeModal input[name=phone_country]').val(),
+				gender: $('#activeModal select[name=gender]').val(),
+				dob: $('#activeModal input[name=dob]').val(),
+				car_colour: $('#activeModal input[name=car_colour]').val(),
+				plate_number: $('#activeModal input[name=plate_number]').val(),
+				car_model: $('#activeModal input[name=car_model_id]').val(),
+				car_capacity: $('#activeModal input[name=car_capacity]').val(),
+				licence_number: $('#activeModal input[name=licence_number]').val(),
+				expiry_date: $('#activeModal input[name=expiry_date]').val(),
+				account_name: $('#activeModal input[name=account_name]').val(),
+				account_number: $('#activeModal input[name=account_number]').val(),
+			};
+			
+			if(data.role=='DRIVER'){
+				let bank_id=$('#activeModal select[name=bank_id]').val();
+				let bank = app.banks.find(bank => {
+					return Number(bank_id) == bank.id;
+				});
+				data["bank_name"] = bank.name;
+				data["bank_code"] = bank.code;
+			}
+
+			
+			
+
+			if (data.role != "SUPERADMIN" && data.role != "SCHOOL") {
+				data.school = $('#activeModal select[name=cschool]').val();
+			}
+			
+			result = await fetch(app.api + "/admin/user", {
+				headers: new Headers({
+					"Content-Type": "application/json",
+					Token: localStorage.getItem("token")
+				}),
+				method: "PUT",
+				body: JSON.stringify(data)
+			});
+			resp = await result.json();
+
+			if (resp.status == 200) {
+				app.closeadduser();
+				msg.success("User Edited Successfully");
+				data.role=='DRIVER'?app.getDrivers(document.getElementById('driverslist')):app.getUsers();
+			} else {
+				msg.error(resp.message);
+			}
+
+			app.finished();
+			
+		} catch (e) {
+			console.error("Edit User error", e)
+			msg.error("An unknown error occurred while editing user!");
 			app.finished();
 		}
 	},
@@ -930,9 +1172,9 @@ let app = {
 				  <a class="dropdown-item" href="#" onclick="app.drivers.deactivate(${
             driver.id
 					}, '${driver.firstname}')">Deactivate Driver</a>
-					<a class="dropdown-item cadhide" href="#" onclick="app.drivers.editDriver(${
+					<a class="dropdown-item cadhide" href="#" onclick="app.showEditUser(${
             driver.id
-          })">Edit Driver</a>
+          },'DRIVER')">Edit Driver</a>
 				  <a class="dropdown-item cadhide" href="#" onclick="app.drivers.fundWallet(${
             driver.id
           }, '${driver.firstname}')">Fund Driver's Wallet</a>
@@ -1040,6 +1282,7 @@ let app = {
 			container.innerHTML = html;
 		} catch (e) {
 			msg.alert("Error occurred while fetching school details")
+			throw e;
 		} finally {
 			app.finished();
 		}
@@ -1390,6 +1633,21 @@ let app = {
 		`;
 
 		msg.alert(html, "School Details")
+	},
+	getDriverDetails: async (id) => {
+		app.loading();
+
+		req = await fetch(`${app.api}/users/${id}/driver`, {
+			headers: new Headers({
+				"Content-Type": "application/json",
+				Token: localStorage.getItem("token")
+			}),
+			method: "GET"
+		});
+		resp = await req.json();
+
+		app.finished();
+		return resp;
 	},
 	driverDetails: async (event, id) => {
 		if (event.target.tagName != "TD") {
